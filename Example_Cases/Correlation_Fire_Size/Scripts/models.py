@@ -9,11 +9,6 @@ import numpy as np
 import pymc as mc
 import graphics
 import data_heat_flux
-import data_cfast_steady
-import data_cfast_transient
-import data_fds
-import external_cfast
-import external_fds
 
 
 def linear():
