@@ -137,7 +137,7 @@ HVENT,1,2,1,%(door_width)s,%(door_height)s,0,1,0,0,1,1
     #  =====================
 
     casename = 'case'
-    filename = '../CFAST_Files/' + casename + '.in'
+    filename = '../../../CFAST_Model/' + casename + '.in'
 
     # Opens a new file, writes the CFAST input file, and closes the file
     f = open(filename, 'w')
@@ -155,13 +155,13 @@ def run_cfast(casename):
     # Run appropriate executable depending on operating system
     try:
         if op_sys == 'Linux':
-            p = subprocess.Popen(['../CFAST_Files/cfast6_linux_64', '../CFAST_Files/' + casename])
+            p = subprocess.Popen(['../../../CFAST_Model/cfast6_linux_64', '../../../CFAST_Model/' + casename])
             p.wait()
         if op_sys == 'Darwin':
-            p = subprocess.Popen(['../CFAST_Files/cfast6_osx_64', '../CFAST_Files/' + casename])
+            p = subprocess.Popen(['../../../CFAST_Model/cfast6_osx_64', '../../../CFAST_Model/' + casename])
             p.wait()
         if op_sys == 'Windows':
-            p = subprocess.Popen(['../CFAST_Files/cfast6_win.exe', '../CFAST_Files/' + casename])
+            p = subprocess.Popen(['../../../CFAST_Model/cfast6_win.exe', '../../../CFAST_Model/' + casename])
             p.wait()
     except Exception:
         hangerror = 1
@@ -178,10 +178,10 @@ def read_cfast(casename):
     # casename_s.csv - species
     # casename_w.csv - wall temperatures
 
-    temperature_file = '../CFAST_Files/' + casename + '_n.csv'
+    temperature_file = '../../../CFAST_Model/' + casename + '_n.csv'
     temps = np.genfromtxt(temperature_file, delimiter=',', skip_header=3)
 
-    output_file = '../CFAST_Files/' + casename + '.out'
+    output_file = '../../../CFAST_Model/' + casename + '.out'
     outfile = open(output_file)
 
     return temps, outfile
