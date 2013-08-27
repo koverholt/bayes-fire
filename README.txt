@@ -56,10 +56,10 @@ command "pip install networkx".
 = USAGE =
 =========
 
-Run the run_case.py Python files in the Scripts directory for each example
+Run the Run_Case.py Python files in the Scripts directory for each example
 case, and check the output in the Figures directory.
 
-The scripts data.py, graphics.py, and models.py are called by the example
+The scripts data_*.py, graphics.py, and models.py are called by the example
 scripts.
 
 Happy Bayesianing!
