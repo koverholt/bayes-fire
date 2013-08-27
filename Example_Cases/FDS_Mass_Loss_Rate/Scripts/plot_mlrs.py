@@ -30,7 +30,7 @@ y_mean = np.array(cur.fetchall())
 #  ============
 
 data_exp = np.genfromtxt(
-            '../Experimental_Data/PMMA.csv',
+            '../Experimental_Data/mlr_cone_data.csv',
             delimiter=',', names=True)
 
 data_FDS = np.genfromtxt(
