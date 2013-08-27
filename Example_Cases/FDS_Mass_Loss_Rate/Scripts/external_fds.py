@@ -94,7 +94,7 @@ def gen_input(abs_coeff, A, E, emissivity, HoR, k, rho, c):
     #  =====================
 
     casename = 'case'
-    filename = '../FDS_Files/' + casename + '.fds'
+    filename = '../../../FDS_Model/' + casename + '.fds'
 
     # Opens a new file, writes the FDS input file, and closes the file
     f = open(filename, 'w')
@@ -106,25 +106,25 @@ def gen_input(abs_coeff, A, E, emissivity, HoR, k, rho, c):
 
 def run_fds(casename):
     """Run FDS on case file."""
-    os.chdir('../FDS_Files')
+    os.chdir('../../../FDS_Model')
 
     # Run appropriate executable depending on operating system
     if op_sys == 'Linux':
-        p = subprocess.Popen(['./fds_intel_linux_64', '../FDS_Files/' + casename + '.fds'])
+        p = subprocess.Popen(['./fds_intel_linux_64', casename + '.fds'])
         p.wait()
     if op_sys == 'Darwin':
-        p = subprocess.Popen(['./fds_intel_osx_64', '../FDS_Files/' + casename + '.fds'])
+        p = subprocess.Popen(['./fds_intel_osx_64', casename + '.fds'])
         p.wait()
     if op_sys == 'Windows':
-        p = subprocess.Popen(['./fds_intel_win_64', '../FDS_Files/' + casename + '.fds'])
+        p = subprocess.Popen(['./fds_intel_win_64', casename + '.fds'])
         p.wait()
 
-    os.chdir('../Scripts')
+    os.chdir('../Example_Cases/FDS_Mass_Loss_Rate/Scripts')
 
 
 def read_fds(casename):
     """Read in FDS output."""
-    mlr_file = '../FDS_Files/' + casename + '_devc.csv'
+    mlr_file = '../../../FDS_Model/' + casename + '_devc.csv'
     mlrs = np.genfromtxt(mlr_file, delimiter=',', skip_header=2)
 
     return mlrs

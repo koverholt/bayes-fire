@@ -3,7 +3,6 @@
 """
 This script plots the measured and predicted mass loss rates for
 the PMMA case: exp. data, posterior mean, posterior low, and posterior high.
-2/8/2013
 """
 
 from __future__ import division
@@ -17,7 +16,7 @@ import sqlite3
 
 # Initialize connection to sqlite3 database file
 conn = sqlite3.connect(
-    '../../PyMC_Output_Files/FDS_Adaptive_100000_Runs/example_fds.sqlite')
+    '../PyMC_Output_Files/FDS_Adaptive_100000_Runs/example_fds.sqlite')
 
 # Create a cursor object to execute commands on
 cur = conn.cursor()
