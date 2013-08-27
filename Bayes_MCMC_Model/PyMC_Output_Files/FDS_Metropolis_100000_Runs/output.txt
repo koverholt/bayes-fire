@@ -1,0 +1,1641 @@
+Current log-probability : 110.484610
+Current log-probability : 137.985729
+Current log-probability : 165.558309
+Current log-probability : 193.256707
+Current log-probability : 221.187188
+Current log-probability : 249.544947
+Current log-probability : 278.812475
+Current log-probability : 310.397797
+Current log-probability : 346.307965
+Current log-probability : 346.776835
+Optimization terminated successfully.
+         Current function value: -346.776835
+         Iterations: 10
+         Function evaluations: 38
+         Gradient evaluations: 10
+         Hessian evaluations: 10
+	Tuning at iteration 1000
+	Metropolis_sigma tuning:
+		value: 0.00462089652041
+		acceptance rate: 0.09
+		adaptive scale factor: 0.9
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  2.50000000e+03   8.50000000e+12   1.88000000e+05   8.49433932e-01
+   7.49999978e+02   2.49899581e-01   1.00000000e+03   3.00008679e+00]
+		acceptance rate: 0.0
+		adaptive scale factor: 0.1
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 2000
+	Metropolis_sigma tuning:
+		value: 0.00346219493395
+		acceptance rate: 0.086
+		adaptive scale factor: 0.81
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  2.49066723e+03   9.42548211e+12   1.87439048e+05   8.86345744e-01
+   7.96800346e+02   2.27057101e-01   1.12543307e+03   2.53840050e+00]
+		acceptance rate: 0.001
+		adaptive scale factor: 0.05
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 3000
+	Metropolis_sigma tuning:
+		value: 0.00195505246941
+		acceptance rate: 0.057
+		adaptive scale factor: 0.729
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.85084654e+03   8.86223166e+12   1.88096757e+05   8.21547665e-01
+   7.98887856e+02   2.41982383e-01   1.16448520e+03   2.12112512e+00]
+		acceptance rate: 0.002
+		adaptive scale factor: 0.025
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 4000
+	Metropolis_sigma tuning:
+		value: 0.0011763660575
+		acceptance rate: 0.035
+		adaptive scale factor: 0.3645
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.87271713e+03   8.59699559e+12   1.87659454e+05   7.60764419e-01
+   8.18599218e+02   2.12366378e-01   1.20126267e+03   1.61552250e+00]
+		acceptance rate: 0.009
+		adaptive scale factor: 0.0125
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 5000
+	Metropolis_sigma tuning:
+		value: 0.000765951608473
+		acceptance rate: 0.03
+		adaptive scale factor: 0.18225
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.82277506e+03   8.47878461e+12   1.88951773e+05   7.96938736e-01
+   8.15100595e+02   1.92482662e-01   1.20661090e+03   1.73967367e+00]
+		acceptance rate: 0.005
+		adaptive scale factor: 0.00625
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 6000
+	Metropolis_sigma tuning:
+		value: 0.000760781662487
+		acceptance rate: 0.077
+		adaptive scale factor: 0.164025
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.95978374e+03   8.37544223e+12   1.87694593e+05   7.90657374e-01
+   8.20974198e+02   1.94028979e-01   1.20824910e+03   1.72960570e+00]
+		acceptance rate: 0.014
+		adaptive scale factor: 0.003125
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 7000
+	Metropolis_sigma tuning:
+		value: 0.000708252130847
+		acceptance rate: 0.1
+		adaptive scale factor: 0.1476225
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.91584880e+03   8.29394353e+12   1.88432026e+05   8.09649555e-01
+   8.43755950e+02   1.94910579e-01   1.20946889e+03   1.73197299e+00]
+		acceptance rate: 0.042
+		adaptive scale factor: 0.0015625
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 8000
+	Metropolis_sigma tuning:
+		value: 0.000745585956847
+		acceptance rate: 0.096
+		adaptive scale factor: 0.13286025
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.84213273e+03   8.29496776e+12   1.88434265e+05   8.22469441e-01
+   8.38554783e+02   1.94891436e-01   1.21275413e+03   1.80326381e+00]
+		acceptance rate: 0.083
+		adaptive scale factor: 0.00140625
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 9000
+	Metropolis_sigma tuning:
+		value: 0.00073378330609
+		acceptance rate: 0.121
+		adaptive scale factor: 0.119574225
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.85658104e+03   8.11917074e+12   1.88889191e+05   8.17906737e-01
+   8.38718910e+02   1.94361358e-01   1.21298785e+03   1.75230013e+00]
+		acceptance rate: 0.139
+		adaptive scale factor: 0.001265625
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 10000
+	Metropolis_sigma tuning:
+		value: 0.000835616792823
+		acceptance rate: 0.144
+		adaptive scale factor: 0.1076168025
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.84577687e+03   7.97990247e+12   1.88750643e+05   8.16756508e-01
+   8.43329994e+02   1.91476611e-01   1.20793469e+03   1.75766120e+00]
+		acceptance rate: 0.096
+		adaptive scale factor: 0.0011390625
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 11000
+	Metropolis_sigma tuning:
+		value: 0.000730713620181
+		acceptance rate: 0.118
+		adaptive scale factor: 0.09685512225
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.80404193e+03   7.90369459e+12   1.88444234e+05   8.14942024e-01
+   8.29952501e+02   1.87260690e-01   1.21214426e+03   1.77945598e+00]
+		acceptance rate: 0.134
+		adaptive scale factor: 0.00102515625
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 12000
+	Metropolis_sigma tuning:
+		value: 0.000713766244127
+		acceptance rate: 0.137
+		adaptive scale factor: 0.087169610025
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.80781913e+03   7.72225680e+12   1.88351464e+05   8.08981333e-01
+   8.30116602e+02   1.89804287e-01   1.21196831e+03   1.74744481e+00]
+		acceptance rate: 0.149
+		adaptive scale factor: 0.000922640625
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 13000
+	Metropolis_sigma tuning:
+		value: 0.000733346282108
+		acceptance rate: 0.152
+		adaptive scale factor: 0.0784526490225
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.83289259e+03   7.80589456e+12   1.87248225e+05   7.96019336e-01
+   8.31416134e+02   1.90126300e-01   1.21383642e+03   1.71867421e+00]
+		acceptance rate: 0.207
+		adaptive scale factor: 0.000922640625
+
+		Tuning step method Metropolis_theta, returned 1
+
+	Tuning at iteration 14000
+	Metropolis_sigma tuning:
+		value: 0.000736746230099
+		acceptance rate: 0.171
+		adaptive scale factor: 0.0706073841203
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.80911359e+03   7.78159055e+12   1.88304460e+05   7.89212692e-01
+   8.14062241e+02   1.91744459e-01   1.21493382e+03   1.68365666e+00]
+		acceptance rate: 0.199
+		adaptive scale factor: 0.0008303765625
+
+		Tuning step method Metropolis_theta, returned 2
+
+	Tuning at iteration 15000
+	Metropolis_sigma tuning:
+		value: 0.000737799483698
+		acceptance rate: 0.184
+		adaptive scale factor: 0.0635466457082
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.85762030e+03   7.85864640e+12   1.87709281e+05   7.74050249e-01
+   8.02337414e+02   1.87427509e-01   1.20951866e+03   1.67844797e+00]
+		acceptance rate: 0.202
+		adaptive scale factor: 0.0008303765625
+
+		Tuning step method Metropolis_theta, returned 1
+
+	Tuning at iteration 16000
+	Metropolis_sigma tuning:
+		value: 0.000776905248034
+		acceptance rate: 0.198
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.87798527e+03   7.91682612e+12   1.88869324e+05   7.90905735e-01
+   8.04890327e+02   1.89889066e-01   1.21390997e+03   1.69571982e+00]
+		acceptance rate: 0.221
+		adaptive scale factor: 0.0008303765625
+
+		Tuning step method Metropolis_theta, returned 1
+
+	Tuning at iteration 17000
+	Metropolis_sigma tuning:
+		value: 0.000707539150466
+		acceptance rate: 0.242
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.85102622e+03   8.18180622e+12   1.88381506e+05   8.00286829e-01
+   8.14868910e+02   1.89426999e-01   1.20910878e+03   1.76541842e+00]
+		acceptance rate: 0.227
+		adaptive scale factor: 0.0008303765625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 18000
+	Metropolis_sigma tuning:
+		value: 0.000704757417242
+		acceptance rate: 0.257
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.83001847e+03   7.97320057e+12   1.88807737e+05   8.00998791e-01
+   8.09919899e+02   1.86100279e-01   1.20215735e+03   1.77914857e+00]
+		acceptance rate: 0.185
+		adaptive scale factor: 0.00074733890625
+
+		Tuning step method Metropolis_theta, returned 1
+
+	Tuning at iteration 19000
+	Metropolis_sigma tuning:
+		value: 0.000797248972324
+		acceptance rate: 0.24
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.85605521e+03   7.99393579e+12   1.88720838e+05   8.08934995e-01
+   8.18970896e+02   1.86186610e-01   1.20959084e+03   1.77497800e+00]
+		acceptance rate: 0.21
+		adaptive scale factor: 0.00074733890625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 20000
+	Metropolis_sigma tuning:
+		value: 0.000764875369186
+		acceptance rate: 0.249
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.78751577e+03   8.06405396e+12   1.88316145e+05   8.08366514e-01
+   8.24445407e+02   1.89868518e-01   1.20687313e+03   1.78868559e+00]
+		acceptance rate: 0.253
+		adaptive scale factor: 0.00074733890625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 21000
+	Metropolis_sigma tuning:
+		value: 0.000816332430233
+		acceptance rate: 0.232
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.75619104e+03   7.85322461e+12   1.88831394e+05   7.97251510e-01
+   8.24146819e+02   1.95132419e-01   1.20391273e+03   1.71913499e+00]
+		acceptance rate: 0.198
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 1
+
+	Tuning at iteration 22000
+	Metropolis_sigma tuning:
+		value: 0.000774326232082
+		acceptance rate: 0.261
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.76293742e+03   7.74992284e+12   1.88891102e+05   8.06021672e-01
+   8.21800217e+02   1.88118295e-01   1.20406654e+03   1.76277046e+00]
+		acceptance rate: 0.252
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 23000
+	Metropolis_sigma tuning:
+		value: 0.000806052680198
+		acceptance rate: 0.252
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.79681033e+03   7.86718879e+12   1.87832052e+05   8.06548915e-01
+   8.30447769e+02   1.94143422e-01   1.20626925e+03   1.77717525e+00]
+		acceptance rate: 0.271
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 24000
+	Metropolis_sigma tuning:
+		value: 0.000636915477147
+		acceptance rate: 0.232
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.80871829e+03   7.87893949e+12   1.87342068e+05   8.07556466e-01
+   8.32980881e+02   1.91756475e-01   1.21057974e+03   1.78385507e+00]
+		acceptance rate: 0.272
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 25000
+	Metropolis_sigma tuning:
+		value: 0.000769678338461
+		acceptance rate: 0.247
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.82452328e+03   7.85658656e+12   1.87549585e+05   8.14586891e-01
+   8.38141269e+02   1.93247834e-01   1.20739260e+03   1.81321824e+00]
+		acceptance rate: 0.277
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 26000
+	Metropolis_sigma tuning:
+		value: 0.000763635442367
+		acceptance rate: 0.222
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.82922103e+03   7.92969861e+12   1.88448028e+05   8.07256441e-01
+   8.27535907e+02   1.92985209e-01   1.20268062e+03   1.78033943e+00]
+		acceptance rate: 0.244
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 27000
+	Metropolis_sigma tuning:
+		value: 0.000736704369338
+		acceptance rate: 0.238
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.81459649e+03   7.90576095e+12   1.88526842e+05   8.08362797e-01
+   8.27629970e+02   1.93523025e-01   1.20779400e+03   1.76254048e+00]
+		acceptance rate: 0.261
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 28000
+	Metropolis_sigma tuning:
+		value: 0.000720162037646
+		acceptance rate: 0.234
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.80191331e+03   7.78514913e+12   1.87935078e+05   7.93752941e-01
+   8.16688133e+02   1.97343775e-01   1.20241399e+03   1.76086953e+00]
+		acceptance rate: 0.275
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 29000
+	Metropolis_sigma tuning:
+		value: 0.000807812561813
+		acceptance rate: 0.233
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.75635742e+03   7.89466618e+12   1.87357436e+05   7.90949878e-01
+   8.20559089e+02   2.01207642e-01   1.19773965e+03   1.78139946e+00]
+		acceptance rate: 0.226
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 30000
+	Metropolis_sigma tuning:
+		value: 0.00083794473894
+		acceptance rate: 0.22
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.75295516e+03   7.88689777e+12   1.88160751e+05   8.05737035e-01
+   8.24613397e+02   1.96456539e-01   1.21526463e+03   1.75179745e+00]
+		acceptance rate: 0.281
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 31000
+	Metropolis_sigma tuning:
+		value: 0.000791218555857
+		acceptance rate: 0.246
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.77622216e+03   8.00299229e+12   1.87838117e+05   8.11559670e-01
+   8.37798310e+02   1.96672655e-01   1.21326145e+03   1.76983091e+00]
+		acceptance rate: 0.237
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 32000
+	Metropolis_sigma tuning:
+		value: 0.000670262032992
+		acceptance rate: 0.261
+		adaptive scale factor: 0.0571919811374
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.78031399e+03   7.93130123e+12   1.88477779e+05   8.25089357e-01
+   8.48234796e+02   1.97972804e-01   1.20782014e+03   1.80189290e+00]
+		acceptance rate: 0.25
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 33000
+	Metropolis_sigma tuning:
+		value: 0.000734236010707
+		acceptance rate: 0.187
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Metropolis_theta tuning:
+		value: [  1.76534691e+03   7.86579781e+12   1.87612648e+05   8.20188914e-01
+   8.45917373e+02   1.97016396e-01   1.20754219e+03   1.81581129e+00]
+		acceptance rate: 0.261
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 1
+
+	Tuning at iteration 34000
+	Metropolis_sigma tuning:
+		value: 0.000705086305727
+		acceptance rate: 0.282
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.76330964e+03   7.93048742e+12   1.88548802e+05   8.24803502e-01
+   8.54511300e+02   1.95452841e-01   1.20152864e+03   1.80110545e+00]
+		acceptance rate: 0.253
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 35000
+	Metropolis_sigma tuning:
+		value: 0.000726953725847
+		acceptance rate: 0.234
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.76536889e+03   7.81050214e+12   1.87987718e+05   8.22571281e-01
+   8.49564033e+02   1.97182460e-01   1.21219956e+03   1.78952559e+00]
+		acceptance rate: 0.241
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 36000
+	Metropolis_sigma tuning:
+		value: 0.000734160761276
+		acceptance rate: 0.263
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.81720301e+03   7.74670786e+12   1.87895116e+05   8.17314330e-01
+   8.41912717e+02   1.97378400e-01   1.21130590e+03   1.78125109e+00]
+		acceptance rate: 0.263
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 37000
+	Metropolis_sigma tuning:
+		value: 0.00079692443403
+		acceptance rate: 0.245
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.78432259e+03   7.68695437e+12   1.88206141e+05   8.13276559e-01
+   8.38529088e+02   1.97793445e-01   1.20194927e+03   1.78650820e+00]
+		acceptance rate: 0.271
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 38000
+	Metropolis_sigma tuning:
+		value: 0.000797882320655
+		acceptance rate: 0.272
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.80310507e+03   7.68779790e+12   1.88435195e+05   8.04841301e-01
+   8.29276885e+02   1.96160268e-01   1.20573641e+03   1.74539048e+00]
+		acceptance rate: 0.251
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 39000
+	Metropolis_sigma tuning:
+		value: 0.000794461800241
+		acceptance rate: 0.253
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.81816244e+03   7.90146193e+12   1.88882934e+05   8.08510563e-01
+   8.34421735e+02   1.93227002e-01   1.20967195e+03   1.72588963e+00]
+		acceptance rate: 0.26
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 40000
+	Metropolis_sigma tuning:
+		value: 0.00079951300644
+		acceptance rate: 0.257
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.81983548e+03   7.95203157e+12   1.88652463e+05   8.01384425e-01
+   8.31552984e+02   1.93455279e-01   1.20882979e+03   1.70764439e+00]
+		acceptance rate: 0.246
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 41000
+	Metropolis_sigma tuning:
+		value: 0.000763859590777
+		acceptance rate: 0.249
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.79306022e+03   7.96801358e+12   1.88917619e+05   8.05646546e-01
+   8.36069551e+02   1.93652498e-01   1.20752929e+03   1.71439172e+00]
+		acceptance rate: 0.258
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 42000
+	Metropolis_sigma tuning:
+		value: 0.000813536587472
+		acceptance rate: 0.264
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.81257975e+03   7.92146487e+12   1.88617906e+05   8.02300465e-01
+   8.30807580e+02   1.92740350e-01   1.20156101e+03   1.74030357e+00]
+		acceptance rate: 0.245
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 43000
+	Metropolis_sigma tuning:
+		value: 0.000783808156952
+		acceptance rate: 0.27
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.83236911e+03   7.96328164e+12   1.87390204e+05   8.05668116e-01
+   8.44631101e+02   1.93281540e-01   1.20834513e+03   1.75153168e+00]
+		acceptance rate: 0.259
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 44000
+	Metropolis_sigma tuning:
+		value: 0.000773725986555
+		acceptance rate: 0.265
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.81636654e+03   7.98603998e+12   1.88988605e+05   8.07527095e-01
+   8.39451722e+02   1.98646055e-01   1.20603184e+03   1.71866905e+00]
+		acceptance rate: 0.278
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 45000
+	Metropolis_sigma tuning:
+		value: 0.00081610866448
+		acceptance rate: 0.248
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.81768543e+03   7.91436813e+12   1.88193643e+05   8.00378116e-01
+   8.29699849e+02   1.96554631e-01   1.21969347e+03   1.69170377e+00]
+		acceptance rate: 0.248
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 46000
+	Metropolis_sigma tuning:
+		value: 0.000771641248004
+		acceptance rate: 0.264
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.80288060e+03   7.87399296e+12   1.87697704e+05   7.96551069e-01
+   8.22623551e+02   1.93201508e-01   1.20738227e+03   1.75188304e+00]
+		acceptance rate: 0.276
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 47000
+	Metropolis_sigma tuning:
+		value: 0.000691437057533
+		acceptance rate: 0.255
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.89828032e+03   8.14032603e+12   1.88177036e+05   7.94213690e-01
+   8.26518056e+02   1.92092443e-01   1.20779699e+03   1.70893634e+00]
+		acceptance rate: 0.256
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 48000
+	Metropolis_sigma tuning:
+		value: 0.0007025386458
+		acceptance rate: 0.287
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.89525954e+03   8.12665981e+12   1.87186183e+05   7.85024204e-01
+   8.18645355e+02   1.94574161e-01   1.20759363e+03   1.72633256e+00]
+		acceptance rate: 0.275
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 49000
+	Metropolis_sigma tuning:
+		value: 0.000786843194375
+		acceptance rate: 0.259
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.91420669e+03   8.21541030e+12   1.87215882e+05   7.85676586e-01
+   8.19867730e+02   1.93225347e-01   1.21478346e+03   1.70519042e+00]
+		acceptance rate: 0.251
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 50000
+	Metropolis_sigma tuning:
+		value: 0.000766952683765
+		acceptance rate: 0.268
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.88077041e+03   8.15113141e+12   1.88379197e+05   7.85973274e-01
+   8.12559122e+02   1.93049174e-01   1.20757441e+03   1.69932162e+00]
+		acceptance rate: 0.277
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+
+Burn-in interval complete
+	Tuning at iteration 51000
+	Metropolis_sigma tuning:
+		value: 0.000688821308016
+		acceptance rate: 0.268
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.88421113e+03   8.12723142e+12   1.88051304e+05   7.85068376e-01
+   8.13790301e+02   1.92387351e-01   1.20696232e+03   1.70777148e+00]
+		acceptance rate: 0.263
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 52000
+	Metropolis_sigma tuning:
+		value: 0.000740444487558
+		acceptance rate: 0.247
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.86855874e+03   8.16165558e+12   1.88425666e+05   7.89607260e-01
+   8.17423899e+02   1.91013920e-01   1.20638880e+03   1.70884789e+00]
+		acceptance rate: 0.243
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 53000
+	Metropolis_sigma tuning:
+		value: 0.000800607529909
+		acceptance rate: 0.264
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.88429589e+03   8.17615021e+12   1.88999088e+05   7.96039007e-01
+   8.13567110e+02   1.91193113e-01   1.21376702e+03   1.70255223e+00]
+		acceptance rate: 0.239
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 54000
+	Metropolis_sigma tuning:
+		value: 0.000813369666723
+		acceptance rate: 0.261
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.90495287e+03   8.22025265e+12   1.88328567e+05   7.98599298e-01
+   8.25998630e+02   1.94687607e-01   1.21227959e+03   1.71398639e+00]
+		acceptance rate: 0.257
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 55000
+	Metropolis_sigma tuning:
+		value: 0.000743519640627
+		acceptance rate: 0.261
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.91806602e+03   8.25536717e+12   1.88493975e+05   8.01050914e-01
+   8.20776840e+02   1.91400289e-01   1.20524577e+03   1.75903427e+00]
+		acceptance rate: 0.27
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 56000
+	Metropolis_sigma tuning:
+		value: 0.000696318131124
+		acceptance rate: 0.254
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.92892506e+03   8.17464271e+12   1.88307587e+05   8.01278413e-01
+   8.29570735e+02   1.93605595e-01   1.20747778e+03   1.73528355e+00]
+		acceptance rate: 0.252
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 57000
+	Metropolis_sigma tuning:
+		value: 0.000784051721735
+		acceptance rate: 0.263
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.90423515e+03   8.20214923e+12   1.88899658e+05   8.04190330e-01
+   8.25167082e+02   1.94598128e-01   1.20676703e+03   1.74170736e+00]
+		acceptance rate: 0.246
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 58000
+	Metropolis_sigma tuning:
+		value: 0.000751178139859
+		acceptance rate: 0.243
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.90962020e+03   8.20426872e+12   1.88423952e+05   7.98497375e-01
+   8.24082027e+02   1.92985172e-01   1.20632305e+03   1.73487303e+00]
+		acceptance rate: 0.21
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 59000
+	Metropolis_sigma tuning:
+		value: 0.000714207045489
+		acceptance rate: 0.268
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.90731785e+03   8.17270406e+12   1.88347212e+05   7.97276643e-01
+   8.16815180e+02   1.93066382e-01   1.21320582e+03   1.73058459e+00]
+		acceptance rate: 0.268
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 60000
+	Metropolis_sigma tuning:
+		value: 0.000818911954669
+		acceptance rate: 0.277
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.88719155e+03   8.22506224e+12   1.88959420e+05   7.94252177e-01
+   8.16691995e+02   1.93480625e-01   1.21014842e+03   1.70292887e+00]
+		acceptance rate: 0.21
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 61000
+	Metropolis_sigma tuning:
+		value: 0.000692180819172
+		acceptance rate: 0.27
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.87851872e+03   8.34706206e+12   1.88462307e+05   7.76355218e-01
+   8.06193541e+02   1.91661034e-01   1.19857260e+03   1.69811532e+00]
+		acceptance rate: 0.274
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 62000
+	Metropolis_sigma tuning:
+		value: 0.000730151736098
+		acceptance rate: 0.235
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.88341288e+03   8.27566668e+12   1.87678630e+05   7.77236894e-01
+   7.98978814e+02   1.91932114e-01   1.21030576e+03   1.71335925e+00]
+		acceptance rate: 0.232
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 63000
+	Metropolis_sigma tuning:
+		value: 0.000818699445953
+		acceptance rate: 0.255
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.90156272e+03   8.21321272e+12   1.88821410e+05   7.83965998e-01
+   7.97863898e+02   1.92236383e-01   1.20624716e+03   1.71307811e+00]
+		acceptance rate: 0.248
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 64000
+	Metropolis_sigma tuning:
+		value: 0.000739464066832
+		acceptance rate: 0.261
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.90773772e+03   8.28539817e+12   1.88986444e+05   7.86807926e-01
+   8.06663022e+02   1.90251075e-01   1.21272215e+03   1.67780585e+00]
+		acceptance rate: 0.227
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 65000
+	Metropolis_sigma tuning:
+		value: 0.000713110165493
+		acceptance rate: 0.264
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.91717537e+03   8.21751949e+12   1.88649482e+05   7.94234988e-01
+   8.08126155e+02   1.92682799e-01   1.21692583e+03   1.71221206e+00]
+		acceptance rate: 0.252
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 66000
+	Metropolis_sigma tuning:
+		value: 0.000766403077269
+		acceptance rate: 0.271
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.93522587e+03   8.33777116e+12   1.88759994e+05   7.80630661e-01
+   8.09064393e+02   1.90047765e-01   1.20871662e+03   1.66638797e+00]
+		acceptance rate: 0.235
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 67000
+	Metropolis_sigma tuning:
+		value: 0.000766822570057
+		acceptance rate: 0.244
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.91138649e+03   8.39109036e+12   1.88391616e+05   7.92493831e-01
+   8.24728309e+02   1.91789745e-01   1.20807620e+03   1.70462665e+00]
+		acceptance rate: 0.263
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 68000
+	Metropolis_sigma tuning:
+		value: 0.000677053557999
+		acceptance rate: 0.245
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.87813967e+03   8.35007722e+12   1.88008118e+05   7.91078230e-01
+   8.21628431e+02   1.95403830e-01   1.21242225e+03   1.70748511e+00]
+		acceptance rate: 0.234
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 69000
+	Metropolis_sigma tuning:
+		value: 0.00071172578014
+		acceptance rate: 0.249
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.85783199e+03   8.35475238e+12   1.88912456e+05   7.98624598e-01
+   8.25562434e+02   1.92540850e-01   1.20557648e+03   1.72170865e+00]
+		acceptance rate: 0.274
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 70000
+	Metropolis_sigma tuning:
+		value: 0.000736924527416
+		acceptance rate: 0.275
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.86373823e+03   8.27079959e+12   1.87969240e+05   7.99302684e-01
+   8.28876304e+02   1.95092496e-01   1.21045843e+03   1.73590559e+00]
+		acceptance rate: 0.258
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 71000
+	Metropolis_sigma tuning:
+		value: 0.000721178297892
+		acceptance rate: 0.241
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.88648997e+03   8.20122457e+12   1.88507523e+05   7.95283422e-01
+   8.22324102e+02   1.95693971e-01   1.20328932e+03   1.73060730e+00]
+		acceptance rate: 0.258
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 72000
+	Metropolis_sigma tuning:
+		value: 0.000696511058766
+		acceptance rate: 0.269
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.89373779e+03   8.22974842e+12   1.88447198e+05   7.96718733e-01
+   8.26650689e+02   1.93649938e-01   1.20879670e+03   1.71164185e+00]
+		acceptance rate: 0.22
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 73000
+	Metropolis_sigma tuning:
+		value: 0.000755781687294
+		acceptance rate: 0.27
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.86631996e+03   8.12242723e+12   1.88970774e+05   7.98971842e-01
+   8.18907975e+02   1.92477926e-01   1.21293056e+03   1.70618206e+00]
+		acceptance rate: 0.24
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 74000
+	Metropolis_sigma tuning:
+		value: 0.000769082304041
+		acceptance rate: 0.265
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.85783506e+03   8.27639523e+12   1.88772507e+05   7.99004422e-01
+   8.28958597e+02   1.92207316e-01   1.20850145e+03   1.70764192e+00]
+		acceptance rate: 0.243
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 75000
+	Metropolis_sigma tuning:
+		value: 0.000802687240639
+		acceptance rate: 0.266
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.80378086e+03   8.27373098e+12   1.88731788e+05   7.94164347e-01
+   8.26591992e+02   1.90690281e-01   1.20577588e+03   1.70099675e+00]
+		acceptance rate: 0.251
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 76000
+	Metropolis_sigma tuning:
+		value: 0.000759854880987
+		acceptance rate: 0.25
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.79128130e+03   8.30562741e+12   1.88587302e+05   8.00390369e-01
+   8.31100608e+02   1.93003659e-01   1.20730042e+03   1.72490066e+00]
+		acceptance rate: 0.275
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 77000
+	Metropolis_sigma tuning:
+		value: 0.000853419244418
+		acceptance rate: 0.255
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.80391163e+03   8.20051706e+12   1.88547556e+05   8.07802923e-01
+   8.40256398e+02   1.95047870e-01   1.21304786e+03   1.71563895e+00]
+		acceptance rate: 0.25
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 78000
+	Metropolis_sigma tuning:
+		value: 0.00083911312929
+		acceptance rate: 0.253
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.76871488e+03   8.30263614e+12   1.88973671e+05   8.14213306e-01
+   8.46706921e+02   1.95388388e-01   1.20978671e+03   1.73087595e+00]
+		acceptance rate: 0.253
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 79000
+	Metropolis_sigma tuning:
+		value: 0.000739237060408
+		acceptance rate: 0.255
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.78180084e+03   8.21821048e+12   1.87456917e+05   8.01360461e-01
+   8.44090217e+02   1.96174245e-01   1.20085063e+03   1.76076696e+00]
+		acceptance rate: 0.252
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 80000
+	Metropolis_sigma tuning:
+		value: 0.000795814358626
+		acceptance rate: 0.257
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.80079021e+03   8.25176698e+12   1.88909721e+05   8.08185358e-01
+   8.38253145e+02   1.97356107e-01   1.20440385e+03   1.73931359e+00]
+		acceptance rate: 0.284
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 81000
+	Metropolis_sigma tuning:
+		value: 0.000788609218154
+		acceptance rate: 0.269
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.83499104e+03   8.37377824e+12   1.88430507e+05   8.08334827e-01
+   8.35288321e+02   1.95399229e-01   1.20646432e+03   1.76505891e+00]
+		acceptance rate: 0.257
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 82000
+	Metropolis_sigma tuning:
+		value: 0.000799455217037
+		acceptance rate: 0.257
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.86655893e+03   8.37035789e+12   1.88138557e+05   8.01928126e-01
+   8.34055733e+02   1.95186297e-01   1.20897205e+03   1.73446174e+00]
+		acceptance rate: 0.248
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 83000
+	Metropolis_sigma tuning:
+		value: 0.000718318392788
+		acceptance rate: 0.256
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.87847312e+03   8.41598770e+12   1.88927272e+05   8.07417804e-01
+   8.31332157e+02   1.99575115e-01   1.21307826e+03   1.72792892e+00]
+		acceptance rate: 0.25
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 84000
+	Metropolis_sigma tuning:
+		value: 0.000732401341688
+		acceptance rate: 0.24
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.86086162e+03   8.34713618e+12   1.88438544e+05   8.10990307e-01
+   8.37762197e+02   1.98356009e-01   1.20884806e+03   1.76318596e+00]
+		acceptance rate: 0.211
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 85000
+	Metropolis_sigma tuning:
+		value: 0.000743509649753
+		acceptance rate: 0.268
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.82983264e+03   8.33760948e+12   1.87871538e+05   8.06594436e-01
+   8.36591973e+02   1.98909364e-01   1.21074263e+03   1.76241138e+00]
+		acceptance rate: 0.251
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 86000
+	Metropolis_sigma tuning:
+		value: 0.000776184880388
+		acceptance rate: 0.271
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.86088501e+03   8.31692175e+12   1.88155507e+05   8.11259794e-01
+   8.46140767e+02   2.01129321e-01   1.20561561e+03   1.76367654e+00]
+		acceptance rate: 0.254
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 87000
+	Metropolis_sigma tuning:
+		value: 0.000799720128365
+		acceptance rate: 0.263
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.87688047e+03   8.30410474e+12   1.87197495e+05   8.05846076e-01
+   8.50507159e+02   1.94003861e-01   1.21104525e+03   1.74243165e+00]
+		acceptance rate: 0.275
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 88000
+	Metropolis_sigma tuning:
+		value: 0.000831705416405
+		acceptance rate: 0.266
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.86239659e+03   8.48626177e+12   1.88698566e+05   8.19906731e-01
+   8.46584790e+02   1.96247785e-01   1.20887740e+03   1.77802039e+00]
+		acceptance rate: 0.261
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 89000
+	Metropolis_sigma tuning:
+		value: 0.000754446433552
+		acceptance rate: 0.261
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.83060795e+03   8.49673528e+12   1.88696520e+05   8.26155091e-01
+   8.53312171e+02   1.97711831e-01   1.21064510e+03   1.78485311e+00]
+		acceptance rate: 0.274
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 90000
+	Metropolis_sigma tuning:
+		value: 0.000763464076891
+		acceptance rate: 0.244
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.84007793e+03   8.46686949e+12   1.88360751e+05   8.36759523e-01
+   8.52199558e+02   1.99058698e-01   1.22303091e+03   1.81476532e+00]
+		acceptance rate: 0.245
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 91000
+	Metropolis_sigma tuning:
+		value: 0.000688004212804
+		acceptance rate: 0.252
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.82146414e+03   8.37161996e+12   1.88152574e+05   8.28701948e-01
+   8.53721711e+02   1.99075935e-01   1.21169213e+03   1.81501715e+00]
+		acceptance rate: 0.251
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 92000
+	Metropolis_sigma tuning:
+		value: 0.000758727280167
+		acceptance rate: 0.281
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.79971100e+03   8.30529204e+12   1.88242316e+05   8.33756417e-01
+   8.58560581e+02   1.98624369e-01   1.20997616e+03   1.83129583e+00]
+		acceptance rate: 0.282
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 93000
+	Metropolis_sigma tuning:
+		value: 0.000783732394329
+		acceptance rate: 0.263
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.78448591e+03   8.34053645e+12   1.88974370e+05   8.41084145e-01
+   8.57207543e+02   2.03967024e-01   1.20581168e+03   1.85771681e+00]
+		acceptance rate: 0.261
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 94000
+	Metropolis_sigma tuning:
+		value: 0.000704362246741
+		acceptance rate: 0.276
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.74737004e+03   8.24007198e+12   1.87865711e+05   8.40166859e-01
+   8.68821414e+02   2.02993299e-01   1.20645938e+03   1.86680086e+00]
+		acceptance rate: 0.256
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 95000
+	Metropolis_sigma tuning:
+		value: 0.000774920088354
+		acceptance rate: 0.244
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.77430299e+03   8.15248742e+12   1.88445580e+05   8.42387598e-01
+   8.73104988e+02   2.06621693e-01   1.21211293e+03   1.81761181e+00]
+		acceptance rate: 0.251
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 96000
+	Metropolis_sigma tuning:
+		value: 0.000717860586601
+		acceptance rate: 0.279
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.78486913e+03   8.26203735e+12   1.88195466e+05   8.43514068e-01
+   8.69670061e+02   2.06404346e-01   1.20897583e+03   1.85593899e+00]
+		acceptance rate: 0.259
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 97000
+	Metropolis_sigma tuning:
+		value: 0.000677370906959
+		acceptance rate: 0.255
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.80724919e+03   8.29089217e+12   1.88794278e+05   8.40912286e-01
+   8.74776198e+02   2.04270446e-01   1.20534821e+03   1.81437048e+00]
+		acceptance rate: 0.256
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 98000
+	Metropolis_sigma tuning:
+		value: 0.00073830828626
+		acceptance rate: 0.249
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.78244690e+03   8.17431973e+12   1.87765856e+05   8.43201507e-01
+   8.84918720e+02   2.05789563e-01   1.21092982e+03   1.82250004e+00]
+		acceptance rate: 0.247
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+	Tuning at iteration 99000
+	Metropolis_sigma tuning:
+		value: 0.000663399040921
+		acceptance rate: 0.249
+		adaptive scale factor: 0.0514727830237
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Metropolis_theta tuning:
+		value: [  1.78187455e+03   8.08579278e+12   1.88123273e+05   8.45559401e-01
+   8.82718633e+02   2.06158621e-01   1.20561669e+03   1.84184879e+00]
+		acceptance rate: 0.259
+		adaptive scale factor: 0.000672605015625
+
+		Tuning step method Metropolis_theta, returned 0
+
+
+Sampling finished normally.
+Plotting theta_0
+Plotting theta_1
+Plotting theta_2
+Plotting theta_3
+Plotting theta_4
+Plotting theta_5
+Plotting theta_6
+Plotting theta_7
+Plotting sigma
+
+theta:
+ 
+	Mean             SD               MC Error        95% HPD interval
+	------------------------------------------------------------------
+	1853.22          48.5             4.795      [ 1773.99   1935.439]
+	8.27592987044e+1297113282895.2    9346221020.4[  8.10775668e+12   8.47877232e+12]
+	188433.508       452.46           35.585                [ 187498.253  188999.994]
+	0.808            0.019            0.002                           [ 0.781  0.849]
+	834.906          21.369           2.126                       [ 802.906  882.095]
+	0.196            0.005            0.0                             [ 0.19   0.206]
+	1209.144         3.878            0.299                     [ 1201.949  1216.672]
+	1.749            0.048            0.005                           [ 1.686  1.849]
+	
+	
+	Posterior quantiles:
+	
+	2.5             25              50              75             97.5
+	 |---------------|===============|===============|---------------|
+	1769.404         1805.654        1863.433       1893.665      1932.741
+	8.10176919747e+128.20583903123e+128.2728120504e+128.34351677362e+128.47632208722e+12
+	187338.201       188160.264      188547.638     188797.362    188978.038
+	0.778            0.794           0.802          0.815         0.847
+	797.452          820.127         830.453        848.405       878.708
+	0.19             0.192           0.195          0.198         0.207
+	1201.818         1206.518        1209.112       1211.842      1216.593
+	1.687            1.713           1.734          1.775         1.851
+	

@@ -1,0 +1,746 @@
+Current log-probability : -4010.403039
+Current log-probability : -3688.845886
+Current log-probability : -3502.101174
+Current log-probability : -3276.602172
+Current log-probability : -3195.046303
+Current log-probability : -2684.903592
+Current log-probability : -2497.168570
+Current log-probability : -2421.337071
+Current log-probability : -2262.479959
+Current log-probability : -2030.378533
+Current log-probability : -1964.917059
+Current log-probability : -1889.116623
+Current log-probability : -1795.533705
+Current log-probability : -1743.718108
+Current log-probability : -1687.637669
+Current log-probability : -1638.696534
+Current log-probability : -1600.630876
+CFAST has hung up!
+Current log-probability : -1569.924814
+Current log-probability : -1542.285512
+Current log-probability : -1514.071246
+Current log-probability : -1488.337847
+Current log-probability : -1466.441369
+Current log-probability : -1449.445832
+Current log-probability : -1435.091997
+Current log-probability : -1409.923964
+Current log-probability : -1397.686806
+Current log-probability : -1388.164975
+Current log-probability : -1380.318582
+Current log-probability : -1371.771522
+Current log-probability : -1364.358607
+Current log-probability : -1356.823364
+Current log-probability : -1350.645420
+Current log-probability : -1332.479103
+Current log-probability : -1328.026895
+Current log-probability : -1324.410756
+Current log-probability : -1320.351587
+Current log-probability : -1317.277219
+Warning: Maximum number of function evaluations has been exceeded.
+	Tuning at iteration 1000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.797816324173
+		acceptance rate: 0.035
+		adaptive scale factor: 0.5
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 2000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.759675898841
+		acceptance rate: 0.076
+		adaptive scale factor: 0.45
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 3000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.783755210251
+		acceptance rate: 0.084
+		adaptive scale factor: 0.405
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 4000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.778931396801
+		acceptance rate: 0.088
+		adaptive scale factor: 0.3645
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 5000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.793795763107
+		acceptance rate: 0.101
+		adaptive scale factor: 0.32805
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 6000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.778847569959
+		acceptance rate: 0.1
+		adaptive scale factor: 0.295245
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 7000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.802444205289
+		acceptance rate: 0.116
+		adaptive scale factor: 0.2657205
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 8000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.761897116778
+		acceptance rate: 0.157
+		adaptive scale factor: 0.23914845
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 9000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.734393186637
+		acceptance rate: 0.161
+		adaptive scale factor: 0.215233605
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 10000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.765638903427
+		acceptance rate: 0.158
+		adaptive scale factor: 0.1937102445
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 11000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.718182253638
+		acceptance rate: 0.177
+		adaptive scale factor: 0.17433922005
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 12000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.766650959566
+		acceptance rate: 0.212
+		adaptive scale factor: 0.17433922005
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 13000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.778671213023
+		acceptance rate: 0.193
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 14000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.789488103393
+		acceptance rate: 0.222
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 15000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.767239211572
+		acceptance rate: 0.221
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 16000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.805910808014
+		acceptance rate: 0.253
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 17000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.762743645921
+		acceptance rate: 0.239
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 18000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.751325343203
+		acceptance rate: 0.22
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 19000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.767831613885
+		acceptance rate: 0.204
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 20000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.766810139841
+		acceptance rate: 0.231
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 21000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.795594257873
+		acceptance rate: 0.227
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 22000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.776997623464
+		acceptance rate: 0.21
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 23000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.797346340629
+		acceptance rate: 0.24
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 24000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.774667015257
+		acceptance rate: 0.231
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 25000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.778873660926
+		acceptance rate: 0.227
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+
+Burn-in interval complete
+	Tuning at iteration 26000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.792216081445
+		acceptance rate: 0.245
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 27000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.79899660223
+		acceptance rate: 0.214
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 28000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.792640412779
+		acceptance rate: 0.217
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 29000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.777752960145
+		acceptance rate: 0.238
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 30000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.806911221414
+		acceptance rate: 0.21
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 31000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.79100451326
+		acceptance rate: 0.233
+		adaptive scale factor: 0.156905298045
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 32000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.779925642022
+		acceptance rate: 0.197
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 1
+
+	Tuning at iteration 33000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.775990636022
+		acceptance rate: 0.258
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 34000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.775811793865
+		acceptance rate: 0.26
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 35000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.776507249625
+		acceptance rate: 0.229
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 36000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.795851187637
+		acceptance rate: 0.257
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 37000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.779660757101
+		acceptance rate: 0.254
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 38000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.779549767767
+		acceptance rate: 0.255
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 39000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.771283238795
+		acceptance rate: 0.246
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 40000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.765828150677
+		acceptance rate: 0.264
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 41000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.78208877422
+		acceptance rate: 0.277
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 42000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.774950107444
+		acceptance rate: 0.26
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 43000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.830942464021
+		acceptance rate: 0.242
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 44000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.81105238757
+		acceptance rate: 0.236
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 45000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.784270525314
+		acceptance rate: 0.233
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 46000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.80052742084
+		acceptance rate: 0.255
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 47000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.774501988674
+		acceptance rate: 0.267
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 48000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.782200761095
+		acceptance rate: 0.234
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+	Tuning at iteration 49000
+		Tuning step method AdaptiveMetropolis_theta, returned 0
+
+	Metropolis_sigma tuning:
+		value: 0.772070574562
+		acceptance rate: 0.242
+		adaptive scale factor: 0.141214768241
+
+		Tuning step method Metropolis_sigma, returned 0
+
+
+Sampling finished normally.
+Plotting sigma
+
+theta:
+ 
+	Mean             SD               MC Error        95% HPD interval
+	------------------------------------------------------------------
+	0.085            0.054            0.004            [ 0.01   0.192]
+	0.039            0.021            0.002            [ 0.01   0.079]
+	0.055            0.03             0.002            [ 0.01   0.111]
+	0.051            0.027            0.002            [ 0.01   0.102]
+	0.047            0.028            0.002              [ 0.01  0.1 ]
+	0.039            0.022            0.002            [ 0.01   0.084]
+	0.079            0.047            0.004            [ 0.01   0.166]
+	0.037            0.018            0.001              [ 0.01  0.07]
+	0.055            0.03             0.003            [ 0.01   0.107]
+	0.053            0.03             0.003              [ 0.01  0.11]
+	0.034            0.018            0.001            [ 0.01   0.069]
+	0.03             0.014            0.001            [ 0.01   0.057]
+	0.052            0.027            0.002            [ 0.01   0.102]
+	0.066            0.033            0.003            [ 0.01   0.131]
+	0.331            0.168            0.013            [ 0.013  0.616]
+	0.577            0.225            0.018            [ 0.097  1.024]
+	0.249            0.163            0.012            [ 0.01   0.569]
+	205.151          4.78             0.386        [ 194.98   213.841]
+	36.27            2.327            0.2            [ 31.655  40.75 ]
+	119.102          2.572            0.212        [ 114.05   124.017]
+	86.844           2.393            0.196          [ 82.334  91.122]
+	93.743           2.416            0.19           [ 89.044  98.681]
+	112.186          2.355            0.199        [ 107.214  116.112]
+	68.576           2.506            0.213          [ 63.319  73.408]
+	135.824          2.925            0.246        [ 130.507  141.387]
+	63.351           3.201            0.268          [ 57.315  69.4  ]
+	125.171          2.948            0.244        [ 119.703  131.47 ]
+	74.377           1.944            0.168          [ 70.277  77.948]
+	118.847          2.943            0.246        [ 113.152  124.091]
+	86.12            3.016            0.247          [ 79.891  91.589]
+	110.08           2.896            0.242        [ 104.428  115.675]
+	85.009           3.313            0.278          [ 78.547  91.216]
+	101.516          3.738            0.322        [  94.313  108.505]
+	110.29           4.027            0.35         [ 102.414  117.708]
+	234.819          3.542            0.295        [ 227.566  241.469]
+	160.213          4.154            0.341        [ 152.109  168.623]
+	224.903          3.835            0.305        [ 217.626  232.684]
+	185.491          3.316            0.276        [ 179.227  191.875]
+	189.373          4.263            0.345        [ 181.532  197.71 ]
+	222.091          4.049            0.345        [ 214.488  230.103]
+	167.852          2.855            0.228        [ 161.487  173.219]
+	194.454          3.892            0.331        [ 187.645  202.394]
+	225.476          5.57             0.491        [ 213.297  236.087]
+	157.539          4.141            0.362        [ 149.74   165.627]
+	229.095          4.548            0.393        [ 219.768  237.914]
+	171.542          4.275            0.342        [ 163.938  180.275]
+	194.327          5.215            0.431        [ 183.267  203.901]
+	216.087          3.766            0.307        [ 209.319  224.105]
+	165.936          4.626            0.39         [ 156.506  174.685]
+	207.492          3.948            0.341        [ 200.069  215.645]
+	189.608          3.422            0.279        [ 183.729  197.14 ]
+	200.815          3.329            0.279        [ 194.347  207.179]
+	185.399          2.866            0.239        [ 180.091  190.593]
+	197.1            3.693            0.28         [ 189.85   204.752]
+	190.221          4.528            0.345        [ 181.133  199.064]
+	206.021          4.561            0.374        [ 196.862  214.245]
+	169.957          3.8              0.316        [ 162.644  177.408]
+	215.468          4.673            0.391        [ 206.249  224.881]
+	179.509          3.961            0.325        [ 171.9    187.329]
+	202.157          4.326            0.367        [ 193.423  210.162]
+	188.284          4.439            0.381        [ 179.672  196.441]
+	194.718          4.192            0.342        [ 186.457  202.304]
+	196.732          4.315            0.353        [ 188.562  205.208]
+	185.658          2.744            0.223        [ 179.684  190.696]
+	207.506          3.625            0.296        [ 199.759  214.084]
+	174.995          3.68             0.304        [ 168.063  181.928]
+	199.252          4.143            0.337        [ 190.516  207.069]
+	281.648          4.612            0.387        [ 272.096  290.561]
+	298.326          4.024            0.339        [ 289.825  305.935]
+	294.504          4.57             0.398        [ 285.131  302.344]
+	283.727          4.152            0.335        [ 276.108  292.274]
+	293.122          4.404            0.365        [ 284.733  303.176]
+	283.61           5.981            0.516        [ 270.094  293.781]
+	295.74           4.873            0.419        [ 287.079  306.126]
+	276.087          3.845            0.329        [ 268.478  283.435]
+	297.53           4.049            0.335        [ 290.413  306.329]
+	282.565          4.983            0.414        [ 273.182  292.951]
+	284.662          4.531            0.371        [ 274.972  293.699]
+	289.809          4.686            0.4          [ 281.579  299.832]
+	284.244          4.501            0.378        [ 275.992  293.265]
+	283.177          4.507            0.365        [ 274.257  292.049]
+	292.747          4.974            0.411        [ 283.162  302.363]
+	283.954          4.88             0.399        [ 273.886  292.782]
+	285.976          3.765            0.318        [ 278.446  293.341]
+	290.2            4.191            0.347        [ 282.319  298.261]
+	281.576          3.988            0.328        [ 273.399  288.97 ]
+	291.663          4.703            0.391        [ 281.894  300.236]
+	280.532          4.079            0.34         [ 272.633  288.288]
+	286.662          3.782            0.303        [ 278.718  293.412]
+	287.135          4.614            0.384        [ 277.287  296.26 ]
+	288.138          4.273            0.349        [ 279.191  295.875]
+	286.016          4.782            0.406        [ 276.285  294.264]
+	286.233          4.806            0.393        [ 277.692  296.271]
+	288.471          5.016            0.405        [ 279.048  298.773]
+	281.559          4.184            0.354        [ 273.43   289.498]
+	289.723          4.559            0.386        [ 280.747  298.063]
+	289.742          4.194            0.349        [ 280.874  297.396]
+	284.989          4.684            0.403        [ 277.039  294.068]
+	259.363          4.627            0.377        [ 249.826  268.183]
+	380.828          5.123            0.41         [ 370.067  390.547]
+	
+	
+	Posterior quantiles:
+	
+	2.5             25              50              75             97.5
+	 |---------------|===============|===============|---------------|
+	0.013            0.042           0.073          0.118         0.214
+	0.011            0.023           0.036          0.051         0.088
+	0.012            0.03            0.051          0.074         0.121
+	0.012            0.029           0.046          0.067         0.114
+	0.011            0.025           0.042          0.065         0.114
+	0.011            0.021           0.033          0.051         0.096
+	0.014            0.042           0.072          0.111         0.186
+	0.011            0.021           0.034          0.049         0.077
+	0.013            0.032           0.052          0.072         0.127
+	0.012            0.03            0.048          0.071         0.121
+	0.011            0.02            0.03           0.043         0.077
+	0.011            0.018           0.027          0.039         0.063
+	0.013            0.03            0.048          0.07          0.113
+	0.015            0.04            0.062          0.087         0.143
+	0.037            0.201           0.324          0.461         0.666
+	0.109            0.432           0.565          0.717         1.049
+	0.02             0.121           0.223          0.351         0.627
+	195.475          201.995         205.214        208.512       214.636
+	31.696           34.753          36.282         37.748        40.845
+	114.364          117.208         119.011        120.901       124.357
+	82.475           85.128          86.767         88.573        91.374
+	88.644           92.176          93.766         95.396        98.501
+	107.67           110.628         112.076        113.683       116.886
+	63.385           67.009          68.784         70.17         73.547
+	130.766          133.605         135.736        137.715       142.128
+	56.995           61.099          63.376         65.659        69.271
+	119.181          123.228         125.082        127.111       130.99
+	70.649           73.177          74.353         75.504        78.509
+	113.319          116.819         119.052        120.966       124.287
+	80.172           84.029          86.188         88.216        91.937
+	104.716          108.012         109.87         112.019       116.057
+	78.663           82.558          84.988         87.36         91.427
+	94.356           98.872          101.802        104.061       108.741
+	102.716          107.511         110.169        113.208       118.056
+	227.107          232.666         234.915        237.323       241.205
+	151.192          157.665         160.161        162.977       168.13
+	217.966          222.274         224.719        227.302       233.129
+	178.901          183.203         185.488        187.85        191.644
+	181.532          186.204         189.356        192.265       197.71
+	214.915          219.218         221.722        224.843       230.627
+	161.121          166.232         168.037        169.781       172.959
+	187.408          191.593         194.29         196.995       202.27
+	213.297          222.212         225.757        229.183       236.087
+	150.247          154.739         157.303        159.949       166.328
+	218.891          226.305         229.302        232.227       237.12
+	163.938          168.478         171.281        174.427       180.275
+	184.228          190.941         194.275        197.753       205.186
+	209.548          213.43          215.769        218.387       224.668
+	156.702          162.919         165.993        168.938       175.097
+	200.163          204.739         207.431        210.021       215.894
+	183.259          187.277         189.495        191.754       196.806
+	194.296          198.495         200.768        203.173       207.167
+	179.971          183.282         185.47         187.506       190.546
+	189.872          194.673         197.023        199.432       204.804
+	181.288          187.166         190.323        193.132       199.286
+	197.064          202.647         206.23         209.194       214.604
+	162.493          167.499         169.969        172.35        177.372
+	206.4            212.421         215.526        218.52        225.209
+	171.563          176.765         179.427        182.32        187.16
+	193.695          199.218         202.158        205.224       210.496
+	178.766          185.279         188.7          191.648       195.851
+	186.374          191.939         194.975        197.645       202.273
+	187.969          193.917         196.866        199.66        204.891
+	180.042          183.941         185.713        187.327       191.595
+	200.51           205.121         207.361        209.851       214.938
+	168.066          172.431         175.046        177.59        181.941
+	190.744          196.618         199.274        202.006       207.484
+	272.096          278.7           281.588        284.856       290.561
+	290.445          295.779         298.265        300.838       307.274
+	284.878          291.262         294.996        297.883       302.221
+	275.836          280.869         283.542        286.587       292.072
+	283.76           290.535         293.042        295.751       302.402
+	269.944          280.184         284.199        287.836       293.663
+	285.685          292.46          295.453        299.342       305.467
+	268.628          273.513         275.962        278.707       283.737
+	290.111          294.84          297.387        300.226       306.142
+	273.186          279.255         282.271        285.982       293.088
+	275.181          281.894         284.604        287.296       294.207
+	281.059          286.556         289.394        292.9         299.487
+	274.946          281.326         284.449        287.325       292.775
+	273.944          280.137         283.326        286.281       291.877
+	283.528          289.266         292.479        296.296       302.776
+	274.285          280.659         284.278        287.215       293.349
+	278.206          283.667         285.974        288.472       293.21
+	282.308          287.379         290.03         293.011       298.258
+	274.406          278.769         281.36         284.148       290.229
+	282.099          288.564         291.641        295.09        300.515
+	272.373          277.795         280.528        283.396       288.142
+	278.842          284.125         286.888        289.173       293.74
+	277.265          284.126         287.327        290.277       296.255
+	279.297          285.385         288.337        291.055       296.24
+	276.373          282.752         286.522        289.418       294.457
+	277.622          282.925         285.987        289.248       296.214
+	278.596          284.988         288.432        291.837       298.434
+	273.43           278.652         281.561        284.327       289.498
+	281.022          286.645         289.87         292.75        298.805
+	281.551          286.731         289.564        292.68        298.756
+	276.522          282.24          285.077        287.998       293.63
+	250.027          256.37          259.287        262.26        268.6
+	370.269          377.436         380.826        384.345       390.803
+	

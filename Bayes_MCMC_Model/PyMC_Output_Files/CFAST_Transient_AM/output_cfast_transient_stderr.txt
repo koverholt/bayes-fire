@@ -1,0 +1,11 @@
+nohup: ignoring input
+/usr/local/lib/python2.7/dist-packages/pymc/StepMethods.py:1179: UserWarning: 
+Covariance was not positive definite and proposal_sd cannot be computed by 
+Cholesky decomposition. The next jumps will be based on the last 
+valid covariance matrix. This situation may have arisen because no 
+jumps were accepted during the last `interval`. One solution is to 
+increase the interval, or specify an initial covariance matrix with 
+a smaller variance. For this simulation, each time a similar error 
+occurs, proposal_sd will be reduced by a factor .9 to reduce the 
+jumps and increase the likelihood of accepted jumps.
+  warnings.warn(adjustmentwarning)
