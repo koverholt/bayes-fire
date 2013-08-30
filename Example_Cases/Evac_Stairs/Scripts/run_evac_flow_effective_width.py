@@ -11,9 +11,9 @@ import matplotlib
 matplotlib.use("Agg")
 
 import pylab as pl
-import evac_flow_occupants_graphics as graphics
+import evac_flow_effective_width_graphics as graphics
 import pymc as mc
-import evac_flow_occupants_models as models
+import evac_flow_effective_width_models as models
 import data_evac
 
 #  ============
@@ -24,9 +24,9 @@ mcmc_iterations = 300000
 burn_iterations = 250000
 thinning_parameter = 10
 
-case_name = 'occupants'
+case_name = 'effective_width'
 
-independent_var = data_evac.occupants
+independent_var = data_evac.effective_width
 
 #  ============================
 #  = Stage 0 (plot exp. data) =
@@ -80,11 +80,11 @@ mc.Matplot.plot(m1, format='pdf', path='../Figures/flow_' + case_name + '_evac_l
 # Plot residuals
 pl.figure(figsize=(12,9))
 y_err1 = m1.y_obs.value - m1.y_mean.stats()['mean']
-pl.hlines([0], 0, 700, linewidth=3, linestyle='dashed')
+pl.hlines([0], 0.6, 1.3, linewidth=3, linestyle='dashed')
 pl.plot(independent_var, y_err1, 'gs', mew=0, ms=10)
 graphics.decorate_plot()
 pl.ylabel("Residual (observed - expected)", fontsize=24)
-pl.axis([0, 700, -3, 3])
+pl.axis([0.6, 1.3, -3, 3])
 pl.savefig('../Figures/PPC/flow_' + case_name + '_evac_linear_residuals.pdf')
 
 # Generate a posterior predictive check
@@ -136,11 +136,11 @@ mc.Matplot.plot(m2, format='pdf', path='../Figures/flow_' + case_name + '_evac_p
 # Plot residuals
 pl.figure(figsize=(12,9))
 y_err2 = m2.y_obs.value - m2.y_mean.stats()['mean']
-pl.hlines([0], 0, 700, linewidth=3, linestyle='dashed')
+pl.hlines([0], 0.6, 1.3, linewidth=3, linestyle='dashed')
 pl.plot(independent_var, y_err2, 'gs', mew=0, ms=10)
 graphics.decorate_plot()
 pl.ylabel("Residual (observed - expected)", fontsize=24)
-pl.axis([0, 700, -3, 3])
+pl.axis([0.6, 1.3, -3, 3])
 pl.savefig('../Figures/PPC/flow_' + case_name + '_evac_power_law_residuals.pdf')
 
 # Generate a posterior predictive check
