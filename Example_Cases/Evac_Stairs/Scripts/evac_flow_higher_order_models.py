@@ -19,9 +19,9 @@ def model1():
     """
     # Priors
     theta = mc.Uniform('theta',
-                       lower=[-100, -10, -10],
-                       upper=[100, 10, 10],
-                       value=[0, 0, 0])
+                       lower=[0.0, 0.0, -1.0],
+                       upper=[1.0, 1.0,  0.0],
+                       value=[0.5, 0.5, -0.5])
     sigma = mc.Uniform('sigma', lower=0., upper=100., value=1.)
 
     # Model
@@ -51,9 +51,9 @@ def model2():
     """
     # Priors
     theta = mc.Uniform('theta',
-                       lower=[-100, -10, -10],
-                       upper=[100, 10, 10],
-                       value=[0, 0, 0])
+                       lower=[0.0, 0.0, 0.0],
+                       upper=[1.0, 1.0, 2.0],
+                       value=[0.5, 0.5, 1.0])
     sigma = mc.Uniform('sigma', lower=0., upper=100., value=1.)
 
     # Model
@@ -83,9 +83,9 @@ def model3():
     """
     # Priors
     theta = mc.Uniform('theta',
-                       lower=[-100, -10, -10, -10],
-                       upper=[100, 10, 10, 10],
-                       value=[0, 0, 0, 0])
+                       lower=[0.0, 0.0, -1.0, 0.0],
+                       upper=[1.0, 1.0,  0.0, 2.0],
+                       value=[0.5, 0.5, -0.5, 1.0])
     sigma = mc.Uniform('sigma', lower=0., upper=100., value=1.)
 
     # Model
