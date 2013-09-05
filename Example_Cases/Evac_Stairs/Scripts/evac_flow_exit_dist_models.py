@@ -47,21 +47,8 @@ def power_law():
     the point source radiation equation as the model.
     """
     # Priors
-    # If you uncomment the below theta line,
-    # then the prior is N(mu, sigma^2),
-    # where in the uninformed setup, mu is any value,
-    # and sigma^2 approaches infinity.
-    # theta = mc.Uninformative('theta', value=[0])
-
-    # If you uncomment the below theta line, then the prior is
-    # a uniform distribution with a range of 50 to 300.
     theta = mc.Uniform('theta',
                        lower=[-10, -5], upper=[10, 5], value=[0, 0])
-
-    # If you uncomment the below theta line,
-    # then the prior is N(mu, sigma^2),
-    # where mu is specified as 100 and sigma^2 is 10,000.
-    # theta = mc.Normal('theta', mu=[100], tau=[0.0001])
 
     sigma = mc.Uniform('sigma', lower=0., upper=100., value=1.)
 
