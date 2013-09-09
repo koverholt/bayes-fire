@@ -73,6 +73,24 @@ def plot_model3(m):
     decorate_plot3()
 
 
+def plot_model4(m):
+    """
+    Plot each realization from Model 4.
+    """
+    x = pl.arange(0.01, 700, 1)
+    for theta_t in m.theta.trace():
+        flow = theta_t[0] * x**theta_t[1] * x**theta_t[2]
+        pl.plot(x, flow,
+                color='gray', alpha=.75, zorder=-1)
+
+    theta = m.theta.stats()['mean']
+    flow = theta[0] * x**theta[1] * x**theta[2]
+    pl.plot(x, flow,
+            color='purple', linewidth=5,
+            label='Model 4')
+    decorate_plot4()
+
+
 def decorate_plot1():
     """Decorate the plot with labels."""
     pl.axis([0, 700, 0.1, 0.9])
@@ -99,6 +117,15 @@ def decorate_plot3():
     pl.legend(numpoints=1, prop=dict(size=20), fancybox=True)
     pl.xticks(fontsize=20)
     pl.xlabel('theta[0] * occupants^theta[1] * exit_distance^theta[2] * effective_width^theta[3]', fontsize=24)
+    pl.yticks(fontsize=20)
+    pl.ylabel('Flow (people/s)', fontsize=24)
+
+def decorate_plot4():
+    """Decorate the plot with labels."""
+    pl.axis([0, 700, 0.1, 0.9])
+    pl.legend(numpoints=1, prop=dict(size=20), fancybox=True)
+    pl.xticks(fontsize=20)
+    pl.xlabel('theta[0] * exit_distance^theta[1] * effective_width^theta[2]', fontsize=24)
     pl.yticks(fontsize=20)
     pl.ylabel('Flow (people/s)', fontsize=24)
 

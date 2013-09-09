@@ -6,6 +6,7 @@ Stage 0: Plot evac data.
 Stage 1: flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2]
 Stage 2: flow vs theta[0] * occupants^theta[1] * effective_width^theta[2]
 Stage 3: flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2] * effective_width^theta[3]
+Stage 4: flow vs theta[0] * exit_distance^theta[1] * effective_width^theta[2]
 """
 
 import matplotlib
@@ -126,6 +127,36 @@ pl.savefig('../Figures/flow_' + case_name + '_evac_model3.pdf')
 mc.Matplot.plot(m3, format='pdf', path='../Figures/flow_' + case_name + '_evac_model3',
                 common_scale=False)
 
+#  ==================================================================================
+#  = Stage 4 (flow vs theta[0] * exit_distance^theta[1] * effective_width^theta[2]) =
+#  ==================================================================================
+
+# Generate model
+vars4 = models.model4()
+
+# Fit model with MAP estimates
+map = mc.MAP(vars4)
+map.fit(method='fmin_powell', verbose=2)
+
+# Import model variables and set database options
+m4 = mc.MCMC(vars4, db='sqlite', dbname='../Figures/flow_' + case_name + '_evac_model4.sqlite')
+
+# Use adaptive Metropolis-Hastings step method
+m4.use_step_method(mc.AdaptiveMetropolis, [m4.theta])
+
+# Configure and run MCMC simulation
+m4.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
+
+# Plot traces and model with mean values
+pl.figure(figsize=(12,9))
+graphics.plot_evac_data()
+graphics.plot_model4(m4)
+pl.savefig('../Figures/flow_' + case_name + '_evac_model4.pdf')
+
+# Plot resulting distributions and convergence diagnostics
+mc.Matplot.plot(m4, format='pdf', path='../Figures/flow_' + case_name + '_evac_model4',
+                common_scale=False)
+
 #  =================
 #  = Print results =
 #  =================
@@ -137,8 +168,11 @@ print "Results for Model 2"
 m2.theta.summary()
 print "Results for Model 3"
 m3.theta.summary()
+print "Results for Model 4"
+m4.theta.summary()
 
 # Find DIC
 print 'DIC (Model 1) = %f' % m1.dic
 print 'DIC (Model 2) = %f' % m2.dic
 print 'DIC (Model 3) = %f' % m3.dic
+print 'DIC (Model 4) = %f' % m4.dic

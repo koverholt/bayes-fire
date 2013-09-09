@@ -106,3 +106,35 @@ def model3():
                       observed=True)
 
     return vars()
+
+
+def model4():
+    """
+    PyMC configuration with Model 4.
+
+    flow vs theta[0] * exit_distance^theta[1] * effective_width^theta[2]
+    """
+    # Priors
+    theta = mc.Uniform('theta',
+                       lower=[0.0, 0.0, 0.0],
+                       upper=[1.0, 1.0, 2.0],
+                       value=[0.5, 0.5, 1.0])
+    sigma = mc.Uniform('sigma', lower=0., upper=100., value=1.)
+
+    # Model
+    @mc.deterministic
+    def y_mean(theta=theta,
+               exit_distance=data_evac.exit_distance,
+               effective_width=data_evac.effective_width):
+        return theta[0] * exit_distance**theta[1] * effective_width**theta[2]
+
+    # Likelihood
+    # The likelihood is N(y_mean, sigma^2), where sigma
+    # is pulled from a uniform distribution.
+    y_obs = mc.Normal('y_obs',
+                      value=data_evac.flow,
+                      mu=y_mean,
+                      tau=sigma**-2,
+                      observed=True)
+
+    return vars()
