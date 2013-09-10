@@ -58,10 +58,10 @@ m1.use_step_method(mc.AdaptiveMetropolis, [m1.theta])
 m1.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 
 # Plot traces and model with mean values
-pl.figure(figsize=(12,9))
-graphics.plot_evac_data()
-graphics.plot_model1(m1)
-pl.savefig('../Figures/flow_' + case_name + '_evac_model1.pdf')
+# pl.figure(figsize=(12,9))
+# graphics.plot_evac_data()
+# graphics.plot_model1(m1)
+# pl.savefig('../Figures/flow_' + case_name + '_evac_model1.pdf')
 
 # Plot resulting distributions and convergence diagnostics
 mc.Matplot.plot(m1, format='pdf', path='../Figures/flow_' + case_name + '_evac_model1',
@@ -88,10 +88,10 @@ m2.use_step_method(mc.AdaptiveMetropolis, [m2.theta])
 m2.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 
 # Plot traces and model with mean values
-pl.figure(figsize=(12,9))
-graphics.plot_evac_data()
-graphics.plot_model2(m2)
-pl.savefig('../Figures/flow_' + case_name + '_evac_model2.pdf')
+# pl.figure(figsize=(12,9))
+# graphics.plot_evac_data()
+# graphics.plot_model2(m2)
+# pl.savefig('../Figures/flow_' + case_name + '_evac_model2.pdf')
 
 # Plot resulting distributions and convergence diagnostics
 mc.Matplot.plot(m2, format='pdf', path='../Figures/flow_' + case_name + '_evac_model2',
@@ -118,10 +118,10 @@ m3.use_step_method(mc.AdaptiveMetropolis, [m3.theta])
 m3.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 
 # Plot traces and model with mean values
-pl.figure(figsize=(12,9))
-graphics.plot_evac_data()
-graphics.plot_model3(m3)
-pl.savefig('../Figures/flow_' + case_name + '_evac_model3.pdf')
+# pl.figure(figsize=(12,9))
+# graphics.plot_evac_data()
+# graphics.plot_model3(m3)
+# pl.savefig('../Figures/flow_' + case_name + '_evac_model3.pdf')
 
 # Plot resulting distributions and convergence diagnostics
 mc.Matplot.plot(m3, format='pdf', path='../Figures/flow_' + case_name + '_evac_model3',
@@ -148,10 +148,10 @@ m4.use_step_method(mc.AdaptiveMetropolis, [m4.theta])
 m4.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 
 # Plot traces and model with mean values
-pl.figure(figsize=(12,9))
-graphics.plot_evac_data()
-graphics.plot_model4(m4)
-pl.savefig('../Figures/flow_' + case_name + '_evac_model4.pdf')
+# pl.figure(figsize=(12,9))
+# graphics.plot_evac_data()
+# graphics.plot_model4(m4)
+# pl.savefig('../Figures/flow_' + case_name + '_evac_model4.pdf')
 
 # Plot resulting distributions and convergence diagnostics
 mc.Matplot.plot(m4, format='pdf', path='../Figures/flow_' + case_name + '_evac_model4',
