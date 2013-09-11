@@ -25,12 +25,13 @@ thinning_parameter = 10
 #  = Parameters and labels =
 #  =========================
 
-independent_parameters = ['occupants', 'exit_distance', 'riser', 'tread',
-                          'evac_chair']
+independent_parameters = ['occupants', 'exit_distance', 'type', 'riser',
+                          'tread', 'evac_chair']
 dependent_parameters = ['pre_evac_int', 'travel_int', 'exit_int']
 
 independent_labels = {'occupants':'Number of Occupants (people)',
                     'exit_distance':'Exit Distance (m)',
+                    'type':'Type (-)',
                     'riser':'Riser (m)',
                     'tread':'Tread (m)',
                     'evac_chair':'Evacuation Chair (-)'}
