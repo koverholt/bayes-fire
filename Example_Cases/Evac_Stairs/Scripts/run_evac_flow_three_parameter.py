@@ -58,7 +58,7 @@ for dep in dependent_parameters:
         # Plot evac data
         pl.figure(figsize=(12,9))
         graphics.plot_all_data(x, y, xlabel, ylabel)
-        pl.savefig('../Figures/three_parameter_' + dep + '_vs_' + ind + '_data.pdf')
+        pl.savefig('../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind + '_data.pdf')
 
         #  ================
         #  = Linear model =
@@ -72,7 +72,7 @@ for dep in dependent_parameters:
         map.fit(method='fmin_powell', verbose=2)
 
         # Import model variables and set database options
-        m = mc.MCMC(vars, db='sqlite', dbname='../Figures/three_parameter_' + dep + '_vs_' + ind + '.sqlite')
+        m = mc.MCMC(vars, db='sqlite', dbname='../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind + '.sqlite')
 
         # # Use adaptive Metropolis-Hastings step method
         m.use_step_method(mc.AdaptiveMetropolis, [m.theta])
@@ -84,10 +84,10 @@ for dep in dependent_parameters:
         pl.figure(figsize=(12,9))
         graphics.plot_evac_data(x, y, xlabel, ylabel)
         graphics.plot_model(m, x, y, xlabel, ylabel)
-        pl.savefig('../Figures/three_parameter_' + dep + '_vs_' + ind + '_results.pdf')
+        pl.savefig('../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind + '_results.pdf')
 
         # Plot resulting distributions and convergence diagnostics
-        mc.Matplot.plot(m, format='pdf', path='../Figures/three_parameter_' + dep + '_vs_' + ind,
+        mc.Matplot.plot(m, format='pdf', path='../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind,
                         common_scale=False)
 
-        m.write_csv('../Figures/three_parameter_' + dep + '_vs_' + ind + '_stats.csv')
+        m.write_csv('../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind + '_stats.csv')

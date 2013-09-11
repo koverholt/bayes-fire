@@ -35,7 +35,7 @@ case_name = 'higher_order'
 # Plot evac data
 pl.figure(figsize=(12,9))
 graphics.plot_all_data()
-pl.savefig('../Figures/flow_' + case_name + '_evac_data.pdf')
+pl.savefig('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_data.pdf')
 
 #  ============================================================================
 #  = Model 1 (flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2]) =
@@ -49,7 +49,7 @@ map = mc.MAP(vars1)
 map.fit(method='fmin_powell', verbose=2)
 
 # Import model variables and set database options
-m1 = mc.MCMC(vars1, db='sqlite', dbname='../Figures/flow_' + case_name + '_evac_model1.sqlite')
+m1 = mc.MCMC(vars1, db='sqlite', dbname='../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model1.sqlite')
 
 # Use adaptive Metropolis-Hastings step method
 m1.use_step_method(mc.AdaptiveMetropolis, [m1.theta])
@@ -61,10 +61,10 @@ m1.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 # pl.figure(figsize=(12,9))
 # graphics.plot_evac_data()
 # graphics.plot_model1(m1)
-# pl.savefig('../Figures/flow_' + case_name + '_evac_model1.pdf')
+# pl.savefig('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model1.pdf')
 
 # Plot resulting distributions and convergence diagnostics
-mc.Matplot.plot(m1, format='pdf', path='../Figures/flow_' + case_name + '_evac_model1',
+mc.Matplot.plot(m1, format='pdf', path='../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model1',
                 common_scale=False)
 
 #  ==============================================================================
@@ -79,7 +79,7 @@ map = mc.MAP(vars2)
 map.fit(method='fmin_powell', verbose=2)
 
 # Import model variables and set database options
-m2 = mc.MCMC(vars2, db='sqlite', dbname='../Figures/flow_' + case_name + '_evac_model2.sqlite')
+m2 = mc.MCMC(vars2, db='sqlite', dbname='../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model2.sqlite')
 
 # Use adaptive Metropolis-Hastings step method
 m2.use_step_method(mc.AdaptiveMetropolis, [m2.theta])
@@ -91,10 +91,10 @@ m2.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 # pl.figure(figsize=(12,9))
 # graphics.plot_evac_data()
 # graphics.plot_model2(m2)
-# pl.savefig('../Figures/flow_' + case_name + '_evac_model2.pdf')
+# pl.savefig('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model2.pdf')
 
 # Plot resulting distributions and convergence diagnostics
-mc.Matplot.plot(m2, format='pdf', path='../Figures/flow_' + case_name + '_evac_model2',
+mc.Matplot.plot(m2, format='pdf', path='../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model2',
                 common_scale=False)
 
 #  =======================================================================================================
@@ -109,7 +109,7 @@ map = mc.MAP(vars3)
 map.fit(method='fmin_powell', verbose=2)
 
 # Import model variables and set database options
-m3 = mc.MCMC(vars3, db='sqlite', dbname='../Figures/flow_' + case_name + '_evac_model3.sqlite')
+m3 = mc.MCMC(vars3, db='sqlite', dbname='../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model3.sqlite')
 
 # Use adaptive Metropolis-Hastings step method
 m3.use_step_method(mc.AdaptiveMetropolis, [m3.theta])
@@ -121,10 +121,10 @@ m3.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 # pl.figure(figsize=(12,9))
 # graphics.plot_evac_data()
 # graphics.plot_model3(m3)
-# pl.savefig('../Figures/flow_' + case_name + '_evac_model3.pdf')
+# pl.savefig('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model3.pdf')
 
 # Plot resulting distributions and convergence diagnostics
-mc.Matplot.plot(m3, format='pdf', path='../Figures/flow_' + case_name + '_evac_model3',
+mc.Matplot.plot(m3, format='pdf', path='../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model3',
                 common_scale=False)
 
 #  ==================================================================================
@@ -139,7 +139,7 @@ map = mc.MAP(vars4)
 map.fit(method='fmin_powell', verbose=2)
 
 # Import model variables and set database options
-m4 = mc.MCMC(vars4, db='sqlite', dbname='../Figures/flow_' + case_name + '_evac_model4.sqlite')
+m4 = mc.MCMC(vars4, db='sqlite', dbname='../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model4.sqlite')
 
 # Use adaptive Metropolis-Hastings step method
 m4.use_step_method(mc.AdaptiveMetropolis, [m4.theta])
@@ -151,10 +151,10 @@ m4.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 # pl.figure(figsize=(12,9))
 # graphics.plot_evac_data()
 # graphics.plot_model4(m4)
-# pl.savefig('../Figures/flow_' + case_name + '_evac_model4.pdf')
+# pl.savefig('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model4.pdf')
 
 # Plot resulting distributions and convergence diagnostics
-mc.Matplot.plot(m4, format='pdf', path='../Figures/flow_' + case_name + '_evac_model4',
+mc.Matplot.plot(m4, format='pdf', path='../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model4',
                 common_scale=False)
 
 #  =================
@@ -172,10 +172,10 @@ print "Results for Model 4"
 m4.theta.summary()
 
 # Write results to file
-m1.write_csv('../Figures/flow_' + case_name + '_evac_model1.csv')
-m2.write_csv('../Figures/flow_' + case_name + '_evac_model2.csv')
-m3.write_csv('../Figures/flow_' + case_name + '_evac_model3.csv')
-m4.write_csv('../Figures/flow_' + case_name + '_evac_model4.csv')
+m1.write_csv('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model1.csv')
+m2.write_csv('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model2.csv')
+m3.write_csv('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model3.csv')
+m4.write_csv('../Figures/Higher_Order_Models/flow_' + case_name + '_evac_model4.csv')
 
 # Find DIC
 print 'DIC (Model 1) = %f' % m1.dic

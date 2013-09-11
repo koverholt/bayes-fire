@@ -35,7 +35,7 @@ independent_var = data_evac.exit_distance
 # Plot evac data
 pl.figure(figsize=(12,9))
 graphics.plot_all_data()
-pl.savefig('../Figures/flow_' + case_name + '_evac_data.pdf')
+pl.savefig('../Figures/Data_Models/flow_' + case_name + '_evac_data.pdf')
 
 #  ==========================
 #  = Stage 1 (linear model) =
@@ -58,7 +58,7 @@ vars1['y_pred1'] = y_pred1
 ### End initialize posterior predictive check ###
 
 # Import model variables and set database options
-m1 = mc.MCMC(vars1, db='sqlite', dbname='../Figures/flow_' + case_name + '_evac_linear.sqlite')
+m1 = mc.MCMC(vars1, db='sqlite', dbname='../Figures/Data_Models/flow_' + case_name + '_evac_linear.sqlite')
 
 # Use adaptive Metropolis-Hastings step method
 m1.use_step_method(mc.AdaptiveMetropolis, [m1.theta])
@@ -70,10 +70,10 @@ m1.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 pl.figure(figsize=(12,9))
 graphics.plot_evac_data()
 graphics.plot_linear_model(m1)
-pl.savefig('../Figures/flow_' + case_name + '_evac_linear.pdf')
+pl.savefig('../Figures/Data_Models/flow_' + case_name + '_evac_linear.pdf')
 
 # Plot resulting distributions and convergence diagnostics
-mc.Matplot.plot(m1, format='pdf', path='../Figures/flow_' + case_name + '_evac_linear',
+mc.Matplot.plot(m1, format='pdf', path='../Figures/Data_Models/flow_' + case_name + '_evac_linear',
                 common_scale=False)
 
 ### Posterior predictive check ###
@@ -85,12 +85,12 @@ pl.plot(independent_var, y_err1, 'gs', mew=0, ms=10)
 graphics.decorate_plot()
 pl.ylabel("Residual (observed - expected)", fontsize=24)
 pl.axis([0, 700, -3, 3])
-pl.savefig('../Figures/PPC/flow_' + case_name + '_evac_linear_residuals.pdf')
+pl.savefig('../Figures/Data_Models/PPC/flow_' + case_name + '_evac_linear_residuals.pdf')
 
 # Generate a posterior predictive check
 pl.figure(figsize=(12,9))
 graphics.plot_predicted_data(y_pred1)
-pl.savefig('../Figures/PPC/flow_' + case_name + '_evac_linear_ppc.pdf')
+pl.savefig('../Figures/Data_Models/PPC/flow_' + case_name + '_evac_linear_ppc.pdf')
 ### End posterior predictive check ###
 
 #  =============================
@@ -114,7 +114,7 @@ vars2['y_pred2'] = y_pred2
 ### End initialize posterior predictive check ###
 
 # Import model variables and set database options
-m2 = mc.MCMC(vars2, db='sqlite', dbname='../Figures/flow_' + case_name + '_evac_power_law.sqlite')
+m2 = mc.MCMC(vars2, db='sqlite', dbname='../Figures/Data_Models/flow_' + case_name + '_evac_power_law.sqlite')
 
 # Use adaptive Metropolis-Hastings step method
 m2.use_step_method(mc.AdaptiveMetropolis, [m2.theta])
@@ -126,10 +126,10 @@ m2.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 pl.figure(figsize=(12,9))
 graphics.plot_evac_data()
 graphics.plot_power_law_model(m2)
-pl.savefig('../Figures/flow_' + case_name + '_evac_power_law.pdf')
+pl.savefig('../Figures/Data_Models/flow_' + case_name + '_evac_power_law.pdf')
 
 # Plot resulting distributions and convergence diagnostics
-mc.Matplot.plot(m2, format='pdf', path='../Figures/flow_' + case_name + '_evac_power_law',
+mc.Matplot.plot(m2, format='pdf', path='../Figures/Data_Models/flow_' + case_name + '_evac_power_law',
                 common_scale=False)
 
 ### Posterior predictive check ###
@@ -141,12 +141,12 @@ pl.plot(independent_var, y_err2, 'gs', mew=0, ms=10)
 graphics.decorate_plot()
 pl.ylabel("Residual (observed - expected)", fontsize=24)
 pl.axis([0, 700, -3, 3])
-pl.savefig('../Figures/PPC/flow_' + case_name + '_evac_power_law_residuals.pdf')
+pl.savefig('../Figures/Data_Models/PPC/flow_' + case_name + '_evac_power_law_residuals.pdf')
 
 # Generate a posterior predictive check
 pl.figure(figsize=(12,9))
 graphics.plot_predicted_data(y_pred2)
-pl.savefig('../Figures/PPC/flow_' + case_name + '_evac_power_law_ppc.pdf')
+pl.savefig('../Figures/Data_Models/PPC/flow_' + case_name + '_evac_power_law_ppc.pdf')
 ### End posterior predictive check ###
 
 #  =================
@@ -160,8 +160,8 @@ print "Results for Power Law Model"
 m2.theta.summary()
 
 # Write results to file
-m1.write_csv('../Figures/flow_' + case_name + '_evac_linear.csv')
-m2.write_csv('../Figures/flow_' + case_name + '_evac_power_law.csv')
+m1.write_csv('../Figures/Data_Models/flow_' + case_name + '_evac_linear.csv')
+m2.write_csv('../Figures/Data_Models/flow_' + case_name + '_evac_power_law.csv')
 
 # Find DIC
 print 'DIC (Linear Model) = %f' % m1.dic
