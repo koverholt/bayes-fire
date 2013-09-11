@@ -39,7 +39,7 @@ def plot_model(m, x, y, xlabel, ylabel):
 def decorate_plot(x, y, xlabel, ylabel):
     """Decorate the plot with labels."""
     pl.axis([0, np.max(x)*1.1, 0, np.max(y)*1.1])
-    pl.legend(numpoints=1, prop=dict(size=20), fancybox=True, loc='bottom right')
+    pl.legend(numpoints=1, prop=dict(size=20), fancybox=True, loc='lower right')
     pl.xticks(fontsize=20)
     pl.xlabel(xlabel, fontsize=24)
     pl.yticks(fontsize=20)

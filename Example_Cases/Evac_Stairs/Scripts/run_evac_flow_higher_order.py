@@ -22,8 +22,8 @@ import data_evac
 #  = Settings =
 #  ============
 
-mcmc_iterations = 300000
-burn_iterations = 250000
+mcmc_iterations = 100000
+burn_iterations = 90000
 thinning_parameter = 10
 
 case_name = 'higher_order'
