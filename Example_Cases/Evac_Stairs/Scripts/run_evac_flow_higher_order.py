@@ -2,11 +2,11 @@
 
 """
 PyMC Bayesian Inference on Evacuation Data
-Stage 0: Plot evac data.
-Stage 1: flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2]
-Stage 2: flow vs theta[0] * occupants^theta[1] * effective_width^theta[2]
-Stage 3: flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2] * effective_width^theta[3]
-Stage 4: flow vs theta[0] * exit_distance^theta[1] * effective_width^theta[2]
+Model 0: Plot evac data.
+Model 1: flow vs theta[0] * occupants^theta[1]     * exit_distance^theta[2]
+Model 2: flow vs theta[0] * occupants^theta[1]     * effective_width^theta[2]
+Model 3: flow vs theta[0] * occupants^theta[1]     * exit_distance^theta[2]   * effective_width^theta[3]
+Model 4: flow vs theta[0] * exit_distance^theta[1] * effective_width^theta[2]
 """
 
 import matplotlib
@@ -29,7 +29,7 @@ thinning_parameter = 10
 case_name = 'higher_order'
 
 #  ============================
-#  = Stage 0 (plot exp. data) =
+#  = Model 0 (plot exp. data) =
 #  ============================
 
 # Plot evac data
@@ -38,7 +38,7 @@ graphics.plot_all_data()
 pl.savefig('../Figures/flow_' + case_name + '_evac_data.pdf')
 
 #  ============================================================================
-#  = Stage 1 (flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2]) =
+#  = Model 1 (flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2]) =
 #  ============================================================================
 
 # Generate model
@@ -68,7 +68,7 @@ mc.Matplot.plot(m1, format='pdf', path='../Figures/flow_' + case_name + '_evac_m
                 common_scale=False)
 
 #  ==============================================================================
-#  = Stage 2 (flow vs theta[0] * occupants^theta[1] * effective_width^theta[2]) =
+#  = Model 2 (flow vs theta[0] * occupants^theta[1] * effective_width^theta[2]) =
 #  ==============================================================================
 
 # Generate model
@@ -98,7 +98,7 @@ mc.Matplot.plot(m2, format='pdf', path='../Figures/flow_' + case_name + '_evac_m
                 common_scale=False)
 
 #  =======================================================================================================
-#  = Stage 3 (flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2] * effective_width^theta[3]) =
+#  = Model 3 (flow vs theta[0] * occupants^theta[1] * exit_distance^theta[2] * effective_width^theta[3]) =
 #  =======================================================================================================
 
 # Generate model
@@ -128,7 +128,7 @@ mc.Matplot.plot(m3, format='pdf', path='../Figures/flow_' + case_name + '_evac_m
                 common_scale=False)
 
 #  ==================================================================================
-#  = Stage 4 (flow vs theta[0] * exit_distance^theta[1] * effective_width^theta[2]) =
+#  = Model 4 (flow vs theta[0] * exit_distance^theta[1] * effective_width^theta[2]) =
 #  ==================================================================================
 
 # Generate model
@@ -170,6 +170,12 @@ print "Results for Model 3"
 m3.theta.summary()
 print "Results for Model 4"
 m4.theta.summary()
+
+# Write results to file
+m1.write_csv('../Figures/flow_' + case_name + '_evac_model1.csv')
+m2.write_csv('../Figures/flow_' + case_name + '_evac_model2.csv')
+m3.write_csv('../Figures/flow_' + case_name + '_evac_model3.csv')
+m4.write_csv('../Figures/flow_' + case_name + '_evac_model4.csv')
 
 # Find DIC
 print 'DIC (Model 1) = %f' % m1.dic

@@ -159,6 +159,10 @@ m1.theta.summary()
 print "Results for Power Law Model"
 m2.theta.summary()
 
+# Write results to file
+m1.write_csv('../Figures/flow_' + case_name + '_evac_linear.csv')
+m2.write_csv('../Figures/flow_' + case_name + '_evac_power_law.csv')
+
 # Find DIC
 print 'DIC (Linear Model) = %f' % m1.dic
 print 'DIC (Power Law Model) = %f' % m2.dic
