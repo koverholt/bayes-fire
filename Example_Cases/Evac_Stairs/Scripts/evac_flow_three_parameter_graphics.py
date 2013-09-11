@@ -32,7 +32,7 @@ def plot_model(m, x, y, xlabel, ylabel):
     y1 = theta * x1
     pl.plot(x1, y1,
             color='purple', linewidth=5,
-            label='Model 1')
+            label='Linear Model')
     decorate_plot(x, y, xlabel, ylabel)
 
 
