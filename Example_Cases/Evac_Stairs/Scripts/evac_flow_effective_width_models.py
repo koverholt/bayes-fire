@@ -4,7 +4,6 @@
 
 from __future__ import division
 
-from math import pi
 import numpy as np
 import pymc as mc
 import evac_flow_effective_width_graphics as graphics

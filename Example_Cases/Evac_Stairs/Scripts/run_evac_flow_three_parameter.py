@@ -2,6 +2,9 @@
 
 """
 PyMC Bayesian Inference on Evacuation Data
+Model 1: Pre-Evacuation Intensity
+Model 2: Travel Intensity
+Model 3: Exit Intensity
 """
 
 import matplotlib
@@ -21,74 +24,116 @@ mcmc_iterations = 100000
 burn_iterations = 90000
 thinning_parameter = 10
 
-#  =========================
-#  = Parameters and labels =
-#  =========================
+case_name = 'three_parameter'
 
-independent_parameters = ['occupants', 'exit_distance', 'type', 'riser',
-                          'tread', 'evac_chair']
-dependent_parameters = ['pre_evac_int', 'travel_int', 'exit_int']
+#  ===========
+#  = Model 1 =
+#  ===========
 
-independent_labels = {'occupants':'Number of Occupants (people)',
-                    'exit_distance':'Exit Distance (m)',
-                    'type':'Type (-)',
-                    'riser':'Riser (m)',
-                    'tread':'Tread (m)',
-                    'evac_chair':'Evacuation Chair (-)'}
-dependent_labels = {'pre_evac_int':'Pre-Evacuation Intensity',
-                    'travel_int':'Travel Intensity',
-                    'exit_int':'Exit Intensity'}
+# Generate model
+vars1 = models.model1()
 
-#  ===============================
-#  = Run model on all parameters =
-#  ===============================
+# Fit model with MAP estimates
+map = mc.MAP(vars1)
+map.fit(method='fmin_powell', verbose=2)
 
-for dep in dependent_parameters:
-    for ind in independent_parameters:
+# Import model variables and set database options
+m1 = mc.MCMC(vars1, db='sqlite', dbname='../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model1.sqlite')
 
-        x = data_evac.data_three_parameter[ind]
-        y = data_evac.data_three_parameter[dep]
+# Use adaptive Metropolis-Hastings step method
+m1.use_step_method(mc.AdaptiveMetropolis, [m1.theta])
 
-        xlabel = independent_labels[ind]
-        ylabel = dependent_labels[dep]
+# Configure and run MCMC simulation
+m1.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 
-        #  ==================
-        #  = Plot data only =
-        #  ==================
+# Plot traces and model with mean values
+# pl.figure(figsize=(12,9))
+# graphics.plot_evac_data()
+# graphics.plot_model1(m1)
+# pl.savefig('../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model1.pdf')
 
-        # Plot evac data
-        pl.figure(figsize=(12,9))
-        graphics.plot_all_data(x, y, xlabel, ylabel)
-        pl.savefig('../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind + '_data.pdf')
+# Plot resulting distributions and convergence diagnostics
+mc.Matplot.plot(m1, format='pdf', path='../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model1',
+                common_scale=False)
 
-        #  ================
-        #  = Linear model =
-        #  ================
+#  ===========
+#  = Model 2 =
+#  ===========
 
-        # Generate model
-        vars = models.linear(x, y)
+# Generate model
+vars2 = models.model2()
 
-        # Fit model with MAP estimates
-        map = mc.MAP(vars)
-        map.fit(method='fmin_powell', verbose=2)
+# Fit model with MAP estimates
+map = mc.MAP(vars2)
+map.fit(method='fmin_powell', verbose=2)
 
-        # Import model variables and set database options
-        m = mc.MCMC(vars, db='sqlite', dbname='../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind + '.sqlite')
+# Import model variables and set database options
+m2 = mc.MCMC(vars2, db='sqlite', dbname='../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model2.sqlite')
 
-        # # Use adaptive Metropolis-Hastings step method
-        m.use_step_method(mc.AdaptiveMetropolis, [m.theta])
+# Use adaptive Metropolis-Hastings step method
+m2.use_step_method(mc.AdaptiveMetropolis, [m2.theta])
 
-        # Configure and run MCMC simulation
-        m.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
+# Configure and run MCMC simulation
+m2.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
 
-        # Plot traces and model with mean values
-        pl.figure(figsize=(12,9))
-        graphics.plot_evac_data(x, y, xlabel, ylabel)
-        graphics.plot_model(m, x, y, xlabel, ylabel)
-        pl.savefig('../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind + '_results.pdf')
+# Plot traces and model with mean values
+# pl.figure(figsize=(12,9))
+# graphics.plot_evac_data()
+# graphics.plot_model2(m2)
+# pl.savefig('../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model2.pdf')
 
-        # Plot resulting distributions and convergence diagnostics
-        mc.Matplot.plot(m, format='pdf', path='../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind,
-                        common_scale=False)
+# Plot resulting distributions and convergence diagnostics
+mc.Matplot.plot(m2, format='pdf', path='../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model2',
+                common_scale=False)
 
-        m.write_csv('../Figures/Three_Parameter_Models/three_parameter_' + dep + '_vs_' + ind + '_stats.csv')
+#  ===========
+#  = Model 3 =
+#  ===========
+
+# Generate model
+vars3 = models.model3()
+
+# Fit model with MAP estimates
+map = mc.MAP(vars3)
+map.fit(method='fmin_powell', verbose=2)
+
+# Import model variables and set database options
+m3 = mc.MCMC(vars3, db='sqlite', dbname='../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model3.sqlite')
+
+# Use adaptive Metropolis-Hastings step method
+m3.use_step_method(mc.AdaptiveMetropolis, [m3.theta])
+
+# Configure and run MCMC simulation
+m3.sample(iter=mcmc_iterations, burn=burn_iterations, thin=thinning_parameter)
+
+# Plot traces and model with mean values
+# pl.figure(figsize=(12,9))
+# graphics.plot_evac_data()
+# graphics.plot_model3(m3)
+# pl.savefig('../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model3.pdf')
+
+# Plot resulting distributions and convergence diagnostics
+mc.Matplot.plot(m3, format='pdf', path='../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model3',
+                common_scale=False)
+
+#  =================
+#  = Print results =
+#  =================
+
+# Display results
+print "Results for Model 1 - Pre-Evacuation Intensity"
+m1.theta.summary()
+print "Results for Model 2 - Travel Intensity"
+m2.theta.summary()
+print "Results for Model 3 - Exit Intensity"
+m3.theta.summary()
+
+# Write results to file
+m1.write_csv('../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model1.csv')
+m2.write_csv('../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model2.csv')
+m3.write_csv('../Figures/Three_Parameter_Models/flow_' + case_name + '_evac_model3.csv')
+
+# Find DIC
+print 'DIC (Model 1) = %f' % m1.dic
+print 'DIC (Model 2) = %f' % m2.dic
+print 'DIC (Model 3) = %f' % m3.dic
