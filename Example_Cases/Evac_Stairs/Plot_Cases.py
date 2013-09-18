@@ -37,66 +37,69 @@ for dbase in database_files:
     cur.execute('select * from sigma')
     sigma = np.array(cur.fetchall())
     cur.execute('select * from theta')
-    theta = np.array(cur.fetchall())
+    theta_all = np.array(cur.fetchall())
     cur.execute('select * from y_mean')
     y_mean = np.array(cur.fetchall())
 
     # Read in the third column of each data array as numpy arrays
     deviance = deviance[:,2]
     sigma = sigma[:,2]
-    theta = theta[:,2]
     y_mean = y_mean[:,2]
 
-    # Generate plot
-    fig = figure()
-    n, bins, rectangles = hist(theta, 50, normed=True)
-    xlabel('Value', fontsize=20)
-    ylabel('Count', fontsize=20)
-    grid(True)
-    # xticks(fontsize=16)
-    # yticks(fontsize=16)
-    savefig('Figures/Summary/' + database_file_name + '_theta.pdf')
+    for i in range(1, np.shape(theta_all)[1]-2):
 
-    print database_file_name
+        theta = theta_all[:,i+1]
 
-    posterior_mean = np.mean(theta)
+        # Generate plot
+        fig = figure()
+        n, bins, rectangles = hist(theta, 50, normed=True)
+        xlabel('Value', fontsize=20)
+        ylabel('Count', fontsize=20)
+        grid(True)
+        # xticks(fontsize=16)
+        # yticks(fontsize=16)
+        savefig('Figures/Summary/' + database_file_name + '_theta_' + str(i-1) + '.pdf')
 
-    print 'Posterior mean value: ' + str(posterior_mean)
+        print database_file_name + '_theta_' + str(i-1)
 
-    count = 0
-    # Case 1: Sign of parameter is positive
-    if posterior_mean > 0:
-        for i in range(len(bins)):
-            # If all bins are positive
-            if (i == 0) and (bins[0] > 0):
-                P = 0
-                break
-            # Find the bin that is positive
-            if bins[i] > 0:
-                P = np.sum(n[:count] * np.diff(bins[:count+1]))
-                break
-            # Count the bins that are negative
-            else:
-                count += 1
-            # If all bins are negative
-            P = 1
-    # Case 2: Sign of parameter is negative
-    elif posterior_mean < 0:
-        for i in reversed(xrange(len(bins))):
-            # If all bins are negative
-            if (i == 0) and (bins[0] < 0):
-                # print "No bins greater than zero"
-                P = 0
-                break
-            # Find the bin that is negative
-            if bins[i] < 0:
-                P = np.sum(n[:count] * np.diff(bins[:count+1]))
-                break
-            # Count the bins that are positive
-            else:
-                count += 1
-            # If all bins are positive
-            P = 1
+        posterior_mean = np.mean(theta)
 
-    print 'Probability of opposite sign = ' + str(P)
-    print
+        print 'Posterior mean value: ' + str(posterior_mean)
+
+        count = 0
+        # Case 1: Sign of parameter is positive
+        if posterior_mean > 0:
+            for j in range(len(bins)):
+                # If all bins are positive
+                if (j == 0) and (bins[0] > 0):
+                    P = 0
+                    break
+                # Find the bin that is positive
+                if bins[j] > 0:
+                    P = np.sum(n[:count] * np.diff(bins[:count+1]))
+                    break
+                # Count the bins that are negative
+                else:
+                    count += 1
+                # If all bins are negative
+                P = 1
+        # Case 2: Sign of parameter is negative
+        elif posterior_mean < 0:
+            for j in reversed(xrange(len(bins))):
+                # If all bins are negative
+                if (j == 0) and (bins[0] < 0):
+                    # print "No bins greater than zero"
+                    P = 0
+                    break
+                # Find the bin that is negative
+                if bins[j] < 0:
+                    P = np.sum(n[:count] * np.diff(bins[:count+1]))
+                    break
+                # Count the bins that are positive
+                else:
+                    count += 1
+                # If all bins are positive
+                P = 1
+
+        print 'Probability of opposite sign = ' + str(P)
+        print
