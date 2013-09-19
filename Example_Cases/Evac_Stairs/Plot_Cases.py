@@ -46,7 +46,7 @@ for dbase in database_files:
     sigma = sigma[:,2]
     y_mean = y_mean[:,2]
 
-    for i in range(1, np.shape(theta_all)[1]-2):
+    for i in range(1, np.shape(theta_all)[1]-1):
 
         theta = theta_all[:,i+1]
 
