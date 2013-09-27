@@ -1,0 +1,23 @@
+! Input file for 'gyp1d' using nominal properties from Kukuck (2009)
+
+&matl 
+    k_temps = 273.15, 448.15, 1088.15, 1473.15
+    k_vals = 0.995, 0.181, 0.401, 6.78
+    rho_0 = 648.
+    c_p = 55.4, 4580., 5160.
+    eps = 1.0 
+    Y1_0 = 0.846
+    A = 5.56e12, 1.01e21
+    E = 100e3, 174e3
+    dh = 2.62e4, 1.18e6 /
+
+&scen
+    L = 0.0159
+    L_a = 0.092
+    t_end = 3601
+    H = 3.048 /
+
+&numr
+    N = 30
+    N_t = 160000
+    N_sol = 100 /
