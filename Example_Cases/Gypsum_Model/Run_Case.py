@@ -4,5 +4,5 @@ import os
 
 os.chdir('Scripts/')
 
-print 'Running FDS_Mass_Loss_Rate ...'
-os.system('python pymc_fds.py')
+print 'Running gyp1d ...'
+os.system('python pymc_gyp1d.py')
