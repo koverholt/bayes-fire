@@ -80,17 +80,19 @@ def gen_input( k1, k2, k3, k4, rho_0, c_p1, c_p2, c_p3, eps, Y1_0,
 
     return casename
 
-
 def run_gyp1d(casename):
     """Run gyp1d on case file."""
     os.chdir('../')
 
-    p = subprocess.Popen(['./gyp1d_osx_64', casename + '.inp'])
-    p.wait()
+    # Run appropriate executable depending on operating system
+    if op_sys == 'Linux':
+        p = subprocess.Popen(['./gyp1d_intel_linux_64', casename + '.inp'])
+        p.wait()
+    if op_sys == 'Darwin':
+        p = subprocess.Popen(['./gyp1d_gfortran_osx_64', casename + '.inp'])
+        p.wait()
 
     os.chdir('./Scripts')
-#    os.chdir('../Example_Cases/FDS_Mass_Loss_Rate/Scripts')
-
 
 def read_gyp1d(casename):
     """Read in gyp1d output."""
