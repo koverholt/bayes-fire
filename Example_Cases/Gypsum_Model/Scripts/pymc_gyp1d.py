@@ -27,7 +27,7 @@ m = mc.MCMC(vars,
             dbname='../Figures/example_gyp1d.sqlite')
 
 # Use adaptive Metropolis-Hastings step method
-#m.use_step_method(mc.AdaptiveMetropolis, [m.theta])
+m.use_step_method(mc.AdaptiveMetropolis, [m.theta])
 
 # Configure and run MCMC simulation
 m.sample(iter=100000, burn=50000, thin=10, verbose=2)
