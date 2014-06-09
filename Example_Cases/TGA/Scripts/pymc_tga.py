@@ -11,14 +11,12 @@ matplotlib.use("Agg")
 import pymc as mc
 import models
 
-print models.T_sol
-print models.params
-## Generate model
-#vars = models.tga_w()
-#
+# Generate model
+vars = models.tga_w()
+
 ## Fit model with MAP estimates
-##map = mc.MAP(vars)
-##map.fit(method='fmin_ncg', verbose=2)
+#map = mc.MAP(vars)
+#map.fit(method='fmin_ncg', verbose=2)
 #
 ## Import model variables and set database options
 #m = mc.MCMC(vars,
