@@ -24,7 +24,7 @@ N_t     = 200                           # resolution of solution
 T_sol   = np.linspace(T_0, T_f, N_t)    # solution temperatures, K
 
 # specified parameters
-N_c     = 3                             # number of components
+N_c     = 4                             # number of components
 
 # uncertain parameters, logA, E, nu
 E_1     = 120e3                         # lower bound activation energy, J/mol-K
