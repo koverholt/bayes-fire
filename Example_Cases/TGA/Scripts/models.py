@@ -13,10 +13,11 @@ import data_expt as de
 import tga
 
 # scenario parameters
-T_exp   = de.T                          # experimental temperatures, K
+T_exp   = de.T[:-1]                     # experimental temperatures, K
+w_exp   = de.w[:-1]                     # experimental mass fractions
 T_0     = de.T[0] - 50.                 # initial simulation temperature, K
 beta    = de.beta                       # heating rate, K/s
-T_f     = de.T[-1]                      # final simulation temperature, K
+T_f     = de.T[-2]                      # final simulation temperature, K
 w_f     = de.w[-1]                      # residual mass fraction
 
 # numerical parameters
@@ -24,7 +25,7 @@ N_t     = 200                           # resolution of solution
 T_sol   = np.linspace(T_0, T_f, N_t)    # solution temperatures, K
 
 # specified parameters
-N_c     = 4                             # number of components
+N_c     = 2                             # number of components
 
 # uncertain parameters, logA, E, nu
 E_1     = 120e3                         # lower bound activation energy, J/mol-K
@@ -49,7 +50,7 @@ params_U    = np.append( logA_U, np.append(E_U, nu_U) )
 def tga_w():
     """PyMC configuration with TGA model."""
     # Priors
-    # TGA model inputs: A1, E1, A2, E2
+    # TGA model inputs: logA, E, nu
     theta = mc.Uniform(
         'theta',
         value=params,
@@ -72,7 +73,7 @@ def tga_w():
     # The likelihood is N(y_mean, sigma^2), where sigma
     # is pulled from a uniform distribution.
     y_obs = mc.Normal('y_obs',
-                      value=de.w,
+                      value=w_exp,
                       mu=y_mean,
                       tau=sigma**-2,
                       observed=True)

@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 
 """
-PyMC simulation using TGA data to infer kinetic parameters for two-step
-gypsum dehydration reaction.
+PyMC simulation using TGA data to infer kinetic parameters for serial reaction
+network
 """
 
 import matplotlib
 matplotlib.use("Agg")
-
 import pymc as mc
 import models
 
@@ -27,8 +26,8 @@ m = mc.MCMC(vars,
 m.use_step_method(mc.AdaptiveMetropolis, [m.theta])
 
 # Configure and run MCMC simulation
-#m.sample(iter=20000, burn=10000, thin=10, verbose=2)
-m.sample(iter=80000, burn=40000, thin=100, verbose=2)
+m.sample(iter=1000000, burn=500000, thin=500, verbose=2)
+#m.sample(iter=1000000, burn=500000, thin=200, verbose=2)
 
 # Plot resulting distributions and convergence diagnostics
 mc.Matplot.plot(m,
