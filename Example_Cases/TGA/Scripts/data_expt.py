@@ -6,10 +6,12 @@ Read in normalized experimental data: [ T (K), w ]
 
 import numpy as np
 
-beta = 3./60.       # heating rate, K/s
+def read_data( matl, beta ):
+    
+    # Read in experimental data from file
+    data = np.genfromtxt('../Experimental_Data/'+ matl + '_' + beta + 'Cpm.csv', delimiter=',', skiprows=1)
 
-# Read in experimental data from file
-data = np.genfromtxt('../Experimental_Data/hdpe_3Cpm.csv', delimiter=',', skiprows=1)
+    #T = data[:,0]       # temperature, K
+    #w = data[:,1]       # normalized total mass
 
-T = data[:,0]       # temperature, K
-w = data[:,1]       # normalized total mass
+    return data

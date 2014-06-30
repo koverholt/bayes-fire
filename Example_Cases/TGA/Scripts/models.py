@@ -4,50 +4,48 @@
 
 """Module for setting up statistical models"""
 
-from __future__ import division
-
 import numpy as np
 from scipy.integrate import odeint
 import pymc as mc
-import data_expt as de
 import tga
 
-# scenario parameters
-T_exp   = de.T[:-1]                     # experimental temperatures, K
-w_exp   = de.w[:-1]                     # experimental mass fractions
-T_0     = de.T[0] - 50.                 # initial simulation temperature, K
-beta    = de.beta                       # heating rate, K/s
-T_f     = de.T[-2]                      # final simulation temperature, K
-w_f     = de.w[-1]                      # residual mass fraction
+def tga_w( data, beta, N_k ):
 
-# numerical parameters
-N_t     = 200                           # resolution of solution
-T_sol   = np.linspace(T_0, T_f, N_t)    # solution temperatures, K
-
-# specified parameters
-N_c     = 2                             # number of components
-
-# uncertain parameters, logA, E, nu
-E_1     = 120e3                         # lower bound activation energy, J/mol-K
-E_2     = 250e3                         # upper bound activation energy, J/mol-K
-E_L     = 60e3*np.ones( N_c - 1 )
-E       = np.linspace(E_1, E_2, N_c-1 ) # E, J/mol
-E_U     = 500e3*np.ones( N_c - 1 )
-
-logA_L  = 4.*np.ones( N_c - 1 )
-logA    = 14.*np.ones( N_c - 1 )        # log of pre-exponential, log(1/s)
-logA_U  = 40.*np.ones( N_c - 1 )
-
-nu_L    = w_f*np.ones( N_c - 2 )
-nu      = w_f**(1./(N_c-1))*np.ones( N_c - 2 )  # vector of stoichiometric coefficients
-nu_U    = np.ones( N_c - 2 )
-
-# parameter list: [ logA, E, nu ]
-params      = np.append( logA, np.append(E, nu) )
-params_L    = np.append( logA_L, np.append(E_L, nu_L) )
-params_U    = np.append( logA_U, np.append(E_U, nu_U) )
-
-def tga_w():
+    # scenario parameters
+    beta    = float(beta)/60.                       # heating rate, K/s
+    T_exp   = data[:-1,0]                     # experimental temperatures, K
+    w_exp   = data[:-1,1]                     # experimental mass fractions
+    T_0     = T_exp[0] - 50.                 # initial simulation temperature, K
+    T_f     = data[-2,0]                      # final simulation temperature, K
+    w_f     = data[-1,1]                      # residual mass fraction
+    
+    # numerical parameters
+    N_t     = 200                           # resolution of solution
+    T_sol   = np.linspace(T_0, T_f, N_t)    # solution temperatures, K
+    
+    # specified parameters
+    N_c     = int(N_k) + 1                  # number of components
+    
+    # uncertain parameters, logA, E, nu
+    E_1     = 120e3                         # lower bound activation energy, J/mol-K
+    E_2     = 250e3                         # upper bound activation energy, J/mol-K
+    E_L     = 60e3*np.ones( N_c - 1 )
+    E       = np.linspace(E_1, E_2, N_c-1 ) # E, J/mol
+    E_U     = 500e3*np.ones( N_c - 1 )
+    
+    logA_L  = 4.*np.ones( N_c - 1 )
+    logA    = 14.*np.ones( N_c - 1 )        # log of pre-exponential, log(1/s)
+    logA_U  = 40.*np.ones( N_c - 1 )
+    
+    nu_L    = w_f*np.ones( N_c - 2 )
+    nu      = w_f**(1./(N_c-1))*np.ones( N_c - 2 )  # vector of stoichiometric coefficients
+    nu_U    = np.ones( N_c - 2 )
+    
+    # parameter list: [ logA, E, nu ]
+    params      = np.append( logA, np.append(E, nu) )
+    params_L    = np.append( logA_L, np.append(E_L, nu_L) )
+    params_U    = np.append( logA_U, np.append(E_U, nu_U) )
+    
     """PyMC configuration with TGA model."""
     # Priors
     # TGA model inputs: logA, E, nu
