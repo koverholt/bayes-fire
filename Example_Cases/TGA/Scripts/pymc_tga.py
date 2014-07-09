@@ -36,7 +36,7 @@ m = mc.MCMC(vars,
 m.use_step_method(mc.AdaptiveMetropolis, [m.theta])
 
 # Configure and run MCMC simulation
-m.sample(iter=160000, burn=80000, thin=160, verbose=2)
+m.sample(iter=2000, burn=1000, thin=1, verbose=1)
 #m.sample(iter=1000000, burn=500000, thin=200, verbose=2)
 
 # Plot resulting distributions and convergence diagnostics

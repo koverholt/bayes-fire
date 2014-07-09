@@ -1,6 +1,6 @@
 #/usr/bin/env python
 
-# June 2014
+# July 2014
 
 """Module for setting up statistical models"""
 
@@ -27,15 +27,15 @@ def tga_w( data, beta, N_k ):
     N_c     = int(N_k) + 1                  # number of components
     
     # uncertain parameters, logA, E, nu
-    E_1     = 120e3                         # lower bound activation energy, J/mol-K
-    E_2     = 250e3                         # upper bound activation energy, J/mol-K
+    E_1     = 150e3                         # lower bound activation energy, J/mol-K
+    E_2     = 350e3                         # upper bound activation energy, J/mol-K
     E_L     = 60e3*np.ones( N_c - 1 )
     E       = np.linspace(E_1, E_2, N_c-1 ) # E, J/mol
-    E_U     = 500e3*np.ones( N_c - 1 )
+    E_U     = 600e3*np.ones( N_c - 1 )
     
     logA_L  = 4.*np.ones( N_c - 1 )
-    logA    = 14.*np.ones( N_c - 1 )        # log of pre-exponential, log(1/s)
-    logA_U  = 40.*np.ones( N_c - 1 )
+    logA    = 20.*np.ones( N_c - 1 )        # log of pre-exponential, log(1/s)
+    logA_U  = 50.*np.ones( N_c - 1 )
     
     nu_L    = w_f*np.ones( N_c - 2 )
     nu      = w_f**(1./(N_c-1))*np.ones( N_c - 2 )  # vector of stoichiometric coefficients
@@ -56,11 +56,11 @@ def tga_w( data, beta, N_k ):
         upper=params_U)
         
     sigma = mc.Uniform('sigma', lower=0., upper=1., value=0.05)
-
+    
     # Model
     @mc.deterministic
     def y_mean(theta=theta):
-     
+    
         w_sol   = tga.tga_solve( theta, beta, w_f, T_sol )
         
         w_int   = np.interp( T_exp, T_sol, w_sol )
