@@ -6,6 +6,7 @@
 
 import numpy as np
 from scipy.integrate import odeint
+import odefort
 
 # constants
 R       = 8.314         # J/mol-K
@@ -26,7 +27,7 @@ def func( w, T, logA, E, nu, nu_f, beta ):
     return dw_dT
 
 # solve ODE
-def tga_solve( params, beta, w_f, T_sol ):
+def tga_solve( params, beta, w_f, T_s ):
 
     # parse parameter list
     N_c     = (len(params) + 4)/3
@@ -42,35 +43,45 @@ def tga_solve( params, beta, w_f, T_sol ):
     # solve
     #sol     = odeint( func, w_0, T_sol, args=(logA, E, nu, nu_f, beta) ) 
 
-    # ------------------------------------
-    # explicit Euler
-    # ------------------------------------
+    # # ------------------------------------
+    # # explicit Euler
+    # # ------------------------------------
    
-    N_t     = 1000
-    T_int   = np.linspace(T_sol[0], T_sol[-1], num=N_t)
-    dT      = (T_sol[-1] - T_sol[0])/(N_t - 1)
+    # N_t     = 1000
+    # T_int   = np.linspace(T_sol[0], T_sol[-1], num=N_t)
+    # dT      = (T_sol[-1] - T_sol[0])/(N_t - 1)
 
-    w = w_0
-    w_tot = np.ones(N_t)
+    # w = w_0
+    # w_tot = np.ones(N_t)
 
-    for i in range(1, N_t):
-        
-        # compute unmodified rate constants
-        r       = w[0:-1]*10.**logA*np.exp(-E/(R*T_int[i]))/beta
+    # for i in range(1, N_t):
+    #     
+    #     # compute unmodified rate constants
+    #     r       = w[0:-1]*10.**logA*np.exp(-E/(R*T_int[i]))/beta
 
-        r[0]    = min(r[0], w[0]/dT)
-        w[0]    = w[0] - dT*r[0]
+    #     r[0]    = min(r[0], w[0]/dT)
+    #     w[0]    = w[0] - dT*r[0]
 
-        for j in range(1, N_c-1):
-            r[j]    = min(r[j], w[j]/dT + nu[j-1]*r[j-1])
-            w[j]    = w[j] - dT*(r[j] - nu[j-1]*r[j-1])
+    #     for j in range(1, N_c-1):
+    #         r[j]    = min(r[j], w[j]/dT + nu[j-1]*r[j-1])
+    #         w[j]    = w[j] - dT*(r[j] - nu[j-1]*r[j-1])
 
-        w[-1]  = min(w_f, w[-1] - dT*(-nu_f*r[-1]))
+    #     w[-1]  = min(w_f, w[-1] - dT*(-nu_f*r[-1]))
 
-        w_tot[i] = np.sum(w)
+    #     w_tot[i] = np.sum(w)
    
-    # interpolate to solution temperatures
-    w_sol = np.interp(T_sol, T_int, w_tot)
+    # # interpolate to solution temperatures
+    # w_sol = np.interp(T_sol, T_int, w_tot)
+    
+    # ------------------------------------ 
+    # explicit Euler -- Fortran
+    # ------------------------------------ 
+   
+    N_t = 1000
+    N_s = len(T_s)
+    nu = np.append( nu, nu_f )
 
-    return w_sol
+    w_s = odefort.solve( N_t, w_0, w_f, T_s, logA, E, nu, beta, N_c, N_s)
+    
+    return w_s
 
