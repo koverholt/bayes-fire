@@ -36,13 +36,14 @@ m = mc.MCMC(vars,
 m.use_step_method(mc.AdaptiveMetropolis, [m.theta])
 
 # Configure and run MCMC simulation
-m.sample(iter=2000, burn=1000, thin=1, verbose=1)
+#m.sample(iter=20000000, burn=10000000, thin=1000, verbose=1)
+m.sample(iter=400000000, burn=200000000, thin=10000, verbose=1)
 
-# Plot resulting distributions and convergence diagnostics
-mc.Matplot.plot(m,
-                format='pdf',
-                path='../Results/example_tga',
-                common_scale=False)
+## Plot resulting distributions and convergence diagnostics
+#mc.Matplot.plot(m,
+#                format='pdf',
+#                path='../Results/example_tga',
+#                common_scale=False)
 
 # Display results
 m.theta.summary()

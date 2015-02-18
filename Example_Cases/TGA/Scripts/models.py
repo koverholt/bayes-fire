@@ -29,13 +29,13 @@ def tga_w( data, beta, N_k ):
     # uncertain parameters, logA, E, nu
     E_1     = 150e3                         # lower bound activation energy, J/mol-K
     E_2     = 350e3                         # upper bound activation energy, J/mol-K
-    E_L     = 60e3*np.ones( N_c - 1 )
+    E_L     = 40e3*np.ones( N_c - 1 )
     E       = np.linspace(E_1, E_2, N_c-1 ) # E, J/mol
-    E_U     = 600e3*np.ones( N_c - 1 )
+    E_U     = 800e3*np.ones( N_c - 1 )
     
-    logA_L  = 4.*np.ones( N_c - 1 )
+    logA_L  = 1.*np.ones( N_c - 1 )
     logA    = 20.*np.ones( N_c - 1 )        # log of pre-exponential, log(1/s)
-    logA_U  = 50.*np.ones( N_c - 1 )
+    logA_U  = 70.*np.ones( N_c - 1 )
     
     nu_L    = w_f*np.ones( N_c - 2 )
     nu      = w_f**(1./(N_c-1))*np.ones( N_c - 2 )  # vector of stoichiometric coefficients
