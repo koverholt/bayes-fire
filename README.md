@@ -13,11 +13,12 @@ Requirements
 These scripts require Python and the PyMC and NetworkX packages to be installed. For a
 convenient installation of Python, you can download the
 [Anaconda Python Distribution](https://store.continuum.io/cshop/anaconda/)
-from Continuum Analytics. Anaconda includes the PyMC and NetworkX packages.
+from Continuum Analytics. Anaconda includes the `pymc` and `networkx` packages.
 
 Files
 =====
 
+```
 ./
  ├── CFAST_Model            -  Contains the CFAST model executable and holds
  |                                 the temporary CFAST case files when running
@@ -43,6 +44,7 @@ Files
  |                                 additional functionality.
  |
  └── Tutorial_Slides        -  Slides from the SciPy 2011 tutorial.
+```
 
 Usage
 =====
