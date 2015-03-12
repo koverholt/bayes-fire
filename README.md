@@ -1,30 +1,22 @@
-=========
-= ABOUT =
-=========
+About
+=====
 
-This is a collection of example scripts that makes use of the Python module
+This is a collection of example scripts that makes use of the Python package
 PyMC, which is an implementation of Bayesian inference in Python. The scripts
 here were adapted from a tutorial given at SciPy 2011 held in Austin, TX, by
 Christopher Fonnesbeck (founder of PyMC) and Abie Flaxman. The slides for the
 tutorial are located in the Tutorial_Slides folder.
 
-================
-= REQUIREMENTS =
-================
+Requirements
+============
 
-These scripts require Python and the PyMC module to be installed. For a
-convenient installation of Python, you can download the Continuum Anaconda or
-Enthought Canopy Express distributions.
+These scripts require Python and the PyMC and NetworkX packages to be installed. For a
+convenient installation of Python, you can download the
+[Anaconda Python Distribution](https://store.continuum.io/cshop/anaconda/)
+from Continuum Analytics. Anaconda includes the PyMC and NetworkX packages.
 
-After installing Python, you can use "easy_install pip", then use "pip" to
-install PyMC with the command "pip install pymc".
-
-You will also need to install the networkx dependency by using the
-command "pip install networkx".
-
-=========
-= FILES =
-=========
+Files
+=====
 
 ./
  ├── CFAST_Model            -  Contains the CFAST model executable and holds
@@ -52,9 +44,8 @@ command "pip install networkx".
  |
  └── Tutorial_Slides        -  Slides from the SciPy 2011 tutorial.
 
-=========
-= USAGE =
-=========
+Usage
+=====
 
 Run the Run_Case.py Python files in the Scripts directory for each example
 case, and check the output in the Figures directory.
