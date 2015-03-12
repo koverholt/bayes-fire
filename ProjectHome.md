@@ -1,0 +1,1 @@
+This repository is a collection of examples for performing Bayesian Inference using PyMC for fire engineering scenarios.
